@@ -1,23 +1,3 @@
-year,id,league-name
-2021/2022,6218,europa-league
-2021/2022,7322,conference-league
-2021/2022,6068,fa-cup
-2021/2022,6135,premier-league
-2021/2022,7470,caraboa-cup
-2021/2022,6089,efl-championship
-2021/2022,5962,community-shield
-2021/2022,5977,champions-league
-2021/2022,6211,la-liga
-2021/2022,6017,EFL-League-1
-2021/2022,6015,EFL-League-2
-2021/2022,6192,Bundesliga-1
-2021/2022,6019,ligue-1
-2021/2022,6018,ligue-2
-2021/2022,6205,Italy-Serie-B
-2021/2022,6198,Italy-Serie-A
-2021/2022,6116,LigaPro
-2021/2022,6120,Spain-Segunda-División
-2021/2022,5951,Netherland-League-1
-2021/2022,5950,Netherlands-League-2
-2021/2022,6117,Liga-Nos
-2021/2022,5992,Scotland-Premiership
+version https://git-lfs.github.com/spec/v1
+oid sha256:3772a48dea27a1a2419c463a4d5d39e6f3fd27b950e5c93ac9178a18b0db0646
+size 661

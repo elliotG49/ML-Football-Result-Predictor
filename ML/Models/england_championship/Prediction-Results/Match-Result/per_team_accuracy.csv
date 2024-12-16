@@ -1,25 +1,3 @@
-team_name,Accuracy
-Blackburn Rovers,100.0
-Derby County,100.0
-Leeds United,100.0
-Stoke City,100.0
-Watford,80.0
-Sheffield United,80.0
-Sunderland,80.0
-Cardiff City,66.66666666666666
-Millwall,66.66666666666666
-Oxford United,66.66666666666666
-Preston North End,66.66666666666666
-Hull City,66.66666666666666
-West Bromwich Albion,60.0
-Plymouth Argyle,60.0
-Burnley,60.0
-Norwich City,60.0
-Coventry City,40.0
-Bristol City,40.0
-Middlesbrough,33.33333333333333
-Luton Town,33.33333333333333
-Sheffield Wednesday,33.33333333333333
-Queens Park Rangers,33.33333333333333
-Portsmouth,20.0
-Swansea City,20.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a88fe6df0de48ed0a7cc36ec8a9a9a5896875f27abf91fa87669fce368fab48
+size 588

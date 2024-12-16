@@ -1,21 +1,3 @@
-year,id,league-name
-2016/2017,1700,europa-league
-2016/2017,1034,fa-cup
-2016/2017,9,premier-league
-2016/2017,1048,caraboa-cup
-2016/2017,22,efl-championship
-2016/2017,6,champions-league
-2016/2017,34,la-liga
-2016/2017,28,EFL-League-1
-2016/2017,32,EFL-League-2
-2016/2017,3,Bundesliga-1
-2016/2017,65,ligue-1
-2016/2017,73,ligue-2
-2016/2017,77,Italy-Serie-B
-2016/2017,68,Italy-Serie-A
-2016/2017,965,LigaPro
-2016/2017,39,Spain-Segunda-División
-2016/2017,51,Netherland-League-1
-2016/2017,55,Netherlands-League-2
-2016/2017,13,Liga-Nos
-2016/2017,2,Scotland-Premiership
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7a6a0d321c5e60c937ead001c97d25bf8373714a2cfc3cc6277af812528341e
+size 559

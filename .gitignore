@@ -1,6 +1,6 @@
 # Ignore logs folder at any level
 logs/
-
+/tmp
 # Ignore Python virtual environment folders
 myenv/
 .venv/

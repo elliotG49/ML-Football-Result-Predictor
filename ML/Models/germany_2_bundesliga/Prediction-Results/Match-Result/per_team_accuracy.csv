@@ -1,19 +1,3 @@
-team_name,Accuracy
-Karlsruher SC,100.0
-Hertha BSC,100.0
-Köln,100.0
-Nürnberg,66.66666666666666
-Paderborn,66.66666666666666
-Hamburger SV,66.66666666666666
-Jahn Regensburg,66.66666666666666
-Schalke 04,50.0
-Ulm,50.0
-Hannover 96,50.0
-Preußen Münster,33.33333333333333
-Eintracht Braunschweig,33.33333333333333
-Fortuna Düsseldorf,33.33333333333333
-Elversberg,33.33333333333333
-Kaiserslautern,33.33333333333333
-Darmstadt 98,0.0
-Greuther Fürth,0.0
-Magdeburg,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:74e0ba9b10443c6a4d976d9bafc366b2d039181c9787a6919beabde06dc56b96
+size 459

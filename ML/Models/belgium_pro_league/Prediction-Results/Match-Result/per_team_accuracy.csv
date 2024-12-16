@@ -1,17 +1,3 @@
-team_name,Accuracy
-KRC Genk,100.0
-KAA Gent,80.0
-Sporting Charleroi,75.0
-Union Saint-Gilloise,75.0
-Royal Antwerp FC,66.66666666666666
-KV Mechelen,60.0
-KV Kortrijk,50.0
-FCV Dender EH,40.0
-Standard Liège,40.0
-RSC Anderlecht,40.0
-Cercle Brugge,40.0
-Club Brugge,25.0
-KVC Westerlo,25.0
-OH Leuven,25.0
-Sint-Truiden,20.0
-Beerschot-Wilrijk,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:98800f83555aa4d9c51b4cfff1eb85f3825a359a7242a0021f5cdf6c99123a41
+size 336

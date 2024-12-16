@@ -1,13 +1,3 @@
-team_name,Accuracy
-Basel,100.0
-Servette,80.0
-St. Gallen,80.0
-Lausanne Sport,75.0
-Luzern,75.0
-Lugano,75.0
-Yverdon Sport,75.0
-Grasshopper,60.0
-Zürich,60.0
-Winterthur,50.0
-Sion,40.0
-Young Boys,25.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a0a579a593acb38e6788c04ebe458a9cc3a687a36a470b0187d4594203aed83
+size 196

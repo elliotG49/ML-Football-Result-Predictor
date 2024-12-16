@@ -1,19 +1,3 @@
-team_name,Accuracy
-Benfica,100.0
-CD Nacional,100.0
-Santa Clara,100.0
-Sporting CP,100.0
-Porto,100.0
-Gil Vicente,75.0
-Vitória Guimarães,75.0
-AVS,66.66666666666666
-Casa Pia,66.66666666666666
-Boavista FC,66.66666666666666
-Sporting Braga,66.66666666666666
-Rio Ave FC,50.0
-Moreirense FC,50.0
-FC Arouca,33.33333333333333
-Estrela Amadora,25.0
-GD Estoril Praia,0.0
-Famalicão,0.0
-Farense,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:fcf0626a856414339326b87d9f26ce03daac3ecff80e5758ea8296c1c8cb3c09
+size 385

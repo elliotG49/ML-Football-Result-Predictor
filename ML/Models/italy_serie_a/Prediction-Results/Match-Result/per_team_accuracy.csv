@@ -1,21 +1,3 @@
-team_name,Accuracy
-AC Milan,100.0
-Venezia,100.0
-Udinese,100.0
-Hellas Verona,100.0
-Napoli,100.0
-Inter Milan,75.0
-Atalanta,66.66666666666666
-Cagliari,66.66666666666666
-Genoa,66.66666666666666
-Roma,66.66666666666666
-Lazio,66.66666666666666
-Lecce,50.0
-Fiorentina,50.0
-Como,50.0
-Bologna,33.33333333333333
-Parma,33.33333333333333
-Juventus,0.0
-Empoli,0.0
-Monza,0.0
-Torino,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:ccb8cb996d3f91f5cfff81e16891314b08dc8e027b63ba731964a6678988afb3
+size 369

@@ -1,19 +1,3 @@
-team_name,Accuracy
-Augsburg,100.0
-Bayern München,100.0
-Union Berlin,100.0
-Hoffenheim,100.0
-Heidenheim,100.0
-Eintracht Frankfurt,100.0
-Mainz 05,100.0
-RB Leipzig,100.0
-Holstein Kiel,100.0
-Bochum,66.66666666666666
-St. Pauli,50.0
-Freiburg,50.0
-Borussia Dortmund,50.0
-Borussia M'gladbach,50.0
-Bayer Leverkusen,33.33333333333333
-Stuttgart,33.33333333333333
-Werder Bremen,33.33333333333333
-Wolfsburg,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4f3670a124b2afa999f4108f6be074f087f032b5c498ca9b3a258fa952996d1
+size 398

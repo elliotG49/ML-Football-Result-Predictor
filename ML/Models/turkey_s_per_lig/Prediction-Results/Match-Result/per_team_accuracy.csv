@@ -1,20 +1,3 @@
-team_name,Accuracy
-Adana Demirspor,100.0
-Antalyaspor,100.0
-Beşiktaş,100.0
-Fenerbahçe,100.0
-Galatasaray,75.0
-Rizespor,75.0
-İstanbul Başakşehir,66.66666666666666
-BB Bodrumspor,66.66666666666666
-Kayserispor,50.0
-Hatayspor,50.0
-Göztepe,50.0
-Alanyaspor,33.33333333333333
-Eyüpspor,33.33333333333333
-Gazişehir Gaziantep,33.33333333333333
-Samsunspor,33.33333333333333
-Trabzonspor,33.33333333333333
-Kasımpaşa,25.0
-Konyaspor,25.0
-Sivasspor,0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5cc6e74a08c59968a6e6fe19c926cf16cdd899d8f1827cb368de25369c9731b
+size 445
