@@ -1,0 +1,15 @@
+1. An excel sheet is sent out, with each tab being a seperate league and its games. 
+    -Betting Score
+    -Names of Teams
+    -Predicted Result
+    -League Name
+    -Odds for our predicted Result
+
+Main Script:
+
+Gets all bettings scores for each game, Then makes the following CSV files:
+
+1. Each league has all of its games for that following game_week, sorted from highest betting_score to lowest
+2. A CSV with all games over our betting threshold score (0.72)
+3. A CSV with the top 50 betting_scores
+4. An optimised ACCA Sheet (coming soon)

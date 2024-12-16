@@ -1,0 +1,17 @@
+{
+    "team_id": 0.053184002415052,
+    "opponent_id": 0.052875096357559194,
+    "team_ELO_before": 0.10351102927901686,
+    "opponent_ELO_before": 0.10178123279453892,
+    "opponent_rest_days": 0.0496427226093534,
+    "team_rest_days": 0.04793089372887484,
+    "is_home": 0.010960745533209217,
+    "team_h2h_win_percent": 0.07648054242694893,
+    "opponent_h2h_win_percent": 0.07580324673953968,
+    "team_ppg": 0.08416137071613275,
+    "opponent_ppg": 0.082097062806468,
+    "team_ppg_mc": 0.08049937041918911,
+    "opponent_ppg_mc": 0.0805961712347937,
+    "team_home_advantage": 0.05033441143922757,
+    "opponent_home_advantage": 0.05014210150009585
+}

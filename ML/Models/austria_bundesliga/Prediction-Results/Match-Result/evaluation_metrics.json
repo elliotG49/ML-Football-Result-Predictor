@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/austria_bundesliga/Training-Results/Match-Result/v6-lanate-vote-rs42/v6-lanate-vote-rs42.joblib",
+    "accuracy": 0.5869565217391305,
+    "precision_macro": 0.5407407407407407,
+    "recall_macro": 0.5271672771672772,
+    "f1_score_macro": 0.5246721877156659,
+    "classification_report": {
+        "0": {
+            "precision": 0.4,
+            "recall": 0.3076923076923077,
+            "f1-score": 0.34782608695652173,
+            "support": 13.0
+        },
+        "1": {
+            "precision": 0.5555555555555556,
+            "recall": 0.4166666666666667,
+            "f1-score": 0.47619047619047616,
+            "support": 12.0
+        },
+        "2": {
+            "precision": 0.6666666666666666,
+            "recall": 0.8571428571428571,
+            "f1-score": 0.75,
+            "support": 21.0
+        },
+        "accuracy": 0.5869565217391305,
+        "macro avg": {
+            "precision": 0.5407407407407407,
+            "recall": 0.5271672771672772,
+            "f1-score": 0.5246721877156659,
+            "support": 46.0
+        },
+        "weighted avg": {
+            "precision": 0.5623188405797102,
+            "recall": 0.5869565217391305,
+            "f1-score": 0.5649135835808804,
+            "support": 46.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            4,
+            2,
+            7
+        ],
+        [
+            5,
+            5,
+            2
+        ],
+        [
+            1,
+            2,
+            18
+        ]
+    ]
+}

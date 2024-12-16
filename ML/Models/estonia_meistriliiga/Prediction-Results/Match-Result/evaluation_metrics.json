@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/estonia_meistriliiga/Training-Results/Match-Result/v6-sporty-exit-rs42/v6-sporty-exit-rs42.joblib",
+    "accuracy": 0.6066666666666667,
+    "precision_macro": 0.5318256090314913,
+    "recall_macro": 0.5466071067163963,
+    "f1_score_macro": 0.5256953944368444,
+    "classification_report": {
+        "0": {
+            "precision": 0.3125,
+            "recall": 0.14285714285714285,
+            "f1-score": 0.19607843137254902,
+            "support": 35.0
+        },
+        "1": {
+            "precision": 0.6212121212121212,
+            "recall": 0.7592592592592593,
+            "f1-score": 0.6833333333333333,
+            "support": 54.0
+        },
+        "2": {
+            "precision": 0.6617647058823529,
+            "recall": 0.7377049180327869,
+            "f1-score": 0.6976744186046512,
+            "support": 61.0
+        },
+        "accuracy": 0.6066666666666667,
+        "macro avg": {
+            "precision": 0.5318256090314913,
+            "recall": 0.5466071067163963,
+            "f1-score": 0.5256953944368444,
+            "support": 150.0
+        },
+        "weighted avg": {
+            "precision": 0.5656706773618538,
+            "recall": 0.6066666666666667,
+            "f1-score": 0.5754725642194862,
+            "support": 150.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            5,
+            15,
+            15
+        ],
+        [
+            5,
+            41,
+            8
+        ],
+        [
+            6,
+            10,
+            45
+        ]
+    ]
+}

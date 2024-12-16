@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/slovakia_super_liga/Training-Results/Match-Result/v6-color-salpa-rs42/v6-color-salpa-rs42.joblib",
+    "accuracy": 0.62,
+    "precision_macro": 0.6684535412605589,
+    "recall_macro": 0.5847662141779789,
+    "f1_score_macro": 0.5690845102609808,
+    "classification_report": {
+        "0": {
+            "precision": 0.75,
+            "recall": 0.23076923076923078,
+            "f1-score": 0.35294117647058826,
+            "support": 13.0
+        },
+        "1": {
+            "precision": 0.5185185185185185,
+            "recall": 0.8235294117647058,
+            "f1-score": 0.6363636363636364,
+            "support": 17.0
+        },
+        "2": {
+            "precision": 0.7368421052631579,
+            "recall": 0.7,
+            "f1-score": 0.717948717948718,
+            "support": 20.0
+        },
+        "accuracy": 0.62,
+        "macro avg": {
+            "precision": 0.6684535412605589,
+            "recall": 0.5847662141779789,
+            "f1-score": 0.5690845102609808,
+            "support": 50.0
+        },
+        "weighted avg": {
+            "precision": 0.6660331384015595,
+            "recall": 0.62,
+            "f1-score": 0.5953078294254764,
+            "support": 50.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            3,
+            8,
+            2
+        ],
+        [
+            0,
+            14,
+            3
+        ],
+        [
+            1,
+            5,
+            14
+        ]
+    ]
+}

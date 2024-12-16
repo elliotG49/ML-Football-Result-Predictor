@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/spain_segunda_division/Training-Results/Match-Result/v6-violet-wile-rs42/v6-violet-wile-rs42.joblib",
+    "accuracy": 0.5,
+    "precision_macro": 0.4577087208666157,
+    "recall_macro": 0.48125404007756956,
+    "f1_score_macro": 0.4566951566951567,
+    "classification_report": {
+        "0": {
+            "precision": 0.3076923076923077,
+            "recall": 0.15384615384615385,
+            "f1-score": 0.20512820512820512,
+            "support": 26.0
+        },
+        "1": {
+            "precision": 0.4864864864864865,
+            "recall": 0.6428571428571429,
+            "f1-score": 0.5538461538461539,
+            "support": 28.0
+        },
+        "2": {
+            "precision": 0.5789473684210527,
+            "recall": 0.6470588235294118,
+            "f1-score": 0.6111111111111112,
+            "support": 34.0
+        },
+        "accuracy": 0.5,
+        "macro avg": {
+            "precision": 0.4577087208666157,
+            "recall": 0.48125404007756956,
+            "f1-score": 0.4566951566951567,
+            "support": 88.0
+        },
+        "weighted avg": {
+            "precision": 0.46938445622656144,
+            "recall": 0.5,
+            "f1-score": 0.472940947940948,
+            "support": 88.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            4,
+            14,
+            8
+        ],
+        [
+            2,
+            18,
+            8
+        ],
+        [
+            7,
+            5,
+            22
+        ]
+    ]
+}

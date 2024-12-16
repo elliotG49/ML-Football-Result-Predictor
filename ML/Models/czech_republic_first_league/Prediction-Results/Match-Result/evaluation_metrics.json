@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/czech_republic_first_league/Training-Results/Match-Result/v6-sliced-abort-rs42/v6-sliced-abort-rs42.joblib",
+    "accuracy": 0.5694444444444444,
+    "precision_macro": 0.49120879120879124,
+    "recall_macro": 0.5,
+    "f1_score_macro": 0.4943386515697375,
+    "classification_report": {
+        "0": {
+            "precision": 0.23076923076923078,
+            "recall": 0.1875,
+            "f1-score": 0.20689655172413793,
+            "support": 16.0
+        },
+        "1": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1-score": 0.5,
+            "support": 24.0
+        },
+        "2": {
+            "precision": 0.7428571428571429,
+            "recall": 0.8125,
+            "f1-score": 0.7761194029850746,
+            "support": 32.0
+        },
+        "accuracy": 0.5694444444444444,
+        "macro avg": {
+            "precision": 0.49120879120879124,
+            "recall": 0.5,
+            "f1-score": 0.4943386515697375,
+            "support": 72.0
+        },
+        "weighted avg": {
+            "precision": 0.5481074481074482,
+            "recall": 0.5694444444444444,
+            "f1-score": 0.5575856350431749,
+            "support": 72.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            3,
+            8,
+            5
+        ],
+        [
+            8,
+            12,
+            4
+        ],
+        [
+            2,
+            4,
+            26
+        ]
+    ]
+}

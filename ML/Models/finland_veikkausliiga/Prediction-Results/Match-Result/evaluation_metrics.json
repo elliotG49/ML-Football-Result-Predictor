@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/finland_veikkausliiga/Training-Results/Match-Result/v6-live-kelp-rs42/v6-live-kelp-rs42.joblib",
+    "accuracy": 0.4866666666666667,
+    "precision_macro": 0.40870980870980866,
+    "recall_macro": 0.41669510041603064,
+    "f1_score_macro": 0.40421923184749087,
+    "classification_report": {
+        "0": {
+            "precision": 0.23809523809523808,
+            "recall": 0.13513513513513514,
+            "f1-score": 0.1724137931034483,
+            "support": 37.0
+        },
+        "1": {
+            "precision": 0.41025641025641024,
+            "recall": 0.37209302325581395,
+            "f1-score": 0.3902439024390244,
+            "support": 43.0
+        },
+        "2": {
+            "precision": 0.5777777777777777,
+            "recall": 0.7428571428571429,
+            "f1-score": 0.65,
+            "support": 70.0
+        },
+        "accuracy": 0.4866666666666667,
+        "macro avg": {
+            "precision": 0.40870980870980866,
+            "recall": 0.41669510041603064,
+            "f1-score": 0.40421923184749087,
+            "support": 150.0
+        },
+        "weighted avg": {
+            "precision": 0.4459666259666259,
+            "recall": 0.4866666666666667,
+            "f1-score": 0.45773198766470424,
+            "support": 150.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            5,
+            14,
+            18
+        ],
+        [
+            7,
+            16,
+            20
+        ],
+        [
+            9,
+            9,
+            52
+        ]
+    ]
+}

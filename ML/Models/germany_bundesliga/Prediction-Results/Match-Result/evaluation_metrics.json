@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/germany_bundesliga/Training-Results/Match-Result/v6-manque-con-rs42/v6-manque-con-rs42.joblib",
+    "accuracy": 0.7111111111111111,
+    "precision_macro": 0.7222222222222222,
+    "recall_macro": 0.6548245614035088,
+    "f1_score_macro": 0.6515196515196515,
+    "classification_report": {
+        "0": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1-score": 0.42857142857142855,
+            "support": 10.0
+        },
+        "1": {
+            "precision": 0.75,
+            "recall": 0.7894736842105263,
+            "f1-score": 0.7692307692307693,
+            "support": 19.0
+        },
+        "2": {
+            "precision": 0.6666666666666666,
+            "recall": 0.875,
+            "f1-score": 0.7567567567567568,
+            "support": 16.0
+        },
+        "accuracy": 0.7111111111111111,
+        "macro avg": {
+            "precision": 0.7222222222222222,
+            "recall": 0.6548245614035088,
+            "f1-score": 0.6515196515196515,
+            "support": 45.0
+        },
+        "weighted avg": {
+            "precision": 0.7203703703703703,
+            "recall": 0.7111111111111111,
+            "f1-score": 0.6890934890934891,
+            "support": 45.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            3,
+            4,
+            3
+        ],
+        [
+            0,
+            15,
+            4
+        ],
+        [
+            1,
+            1,
+            14
+        ]
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "random_state": 42,
+    "overall_accuracy": 1.0,
+    "overall_precision": 1.0,
+    "overall_recall": 1.0,
+    "overall_f1": 1.0,
+    "cv_accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "mean_cv_accuracy": 1.0,
+    "std_cv_accuracy": 0.0,
+    "cv_precisions": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "mean_cv_precision": 1.0,
+    "std_cv_precision": 0.0,
+    "cv_recalls": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "mean_cv_recall": 1.0,
+    "std_cv_recall": 0.0,
+    "cv_f1s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "mean_cv_f1": 1.0,
+    "std_cv_f1": 0.0,
+    "feature_importances": {
+        "team_id": 0.005934159675763696,
+        "opponent_id": 0.005890267816995216,
+        "team_ELO_before": 0.013321488202591594,
+        "opponent_ELO_before": 0.014247620204571678,
+        "h2h_btts": 0.005000401564283563,
+        "team_btts_l10": 0.0035191453920886727,
+        "opponent_btts_l10": 0.003624806850768429,
+        "team_conceded_l20": 0.006648317642795264,
+        "opponent_conceded_l20": 0.006761159479872625,
+        "team_scoring_streak": 0.004017871854117416,
+        "opponent_scoring_streak": 0.004065980161312074,
+        "team_conceded_streak": 0.4704713948215574,
+        "opponent_conceded_streak": 0.4564973863332824
+    },
+    "high_confidence_threshold": 0.51,
+    "high_confidence_accuracy": 1.0,
+    "high_confidence_precision": 1.0,
+    "high_confidence_recall": 1.0,
+    "high_confidence_f1": 1.0,
+    "number_high_confidence_predictions": 8544,
+    "overall_confusion_matrix": [
+        [
+            4272,
+            0
+        ],
+        [
+            0,
+            4272
+        ]
+    ]
+}

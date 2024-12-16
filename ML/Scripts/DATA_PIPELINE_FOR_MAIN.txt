@@ -1,0 +1,17 @@
+1. Finds current game_week for league
+2. Fetches most recent data for just those matches
+3. Add Features to those matches (ELO, Home-Advantage. Rest-Days) \ Done
+4. Create data-set for those matches \ Done
+5. Use pre trained model for those matches
+6. Store those predicitons within those matches collection (this should include a last updated date)
+
+--- This needs to be done for only those next matches, the script should take a command line input of the name of the YAML config, eg 'england_premier_league'
+
+
+
+-- To predict a new game gith now:
+
+1. Update ELOS
+2. Add features (rest days)
+3. Prepare dataset
+4.Auto Predict

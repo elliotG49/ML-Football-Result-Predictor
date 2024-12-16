@@ -1,0 +1,3608 @@
+{
+    "success": true,
+    "pager": {
+        "current_page": 1,
+        "max_page": 1,
+        "results_per_page": 2000,
+        "total_results": 48
+    },
+    "metadata": {
+        "request_limit": "1800",
+        "request_remaining": "1799",
+        "request_reset_message": "Request limit is refreshed every hour."
+    },
+    "data": [
+        {
+            "name": "Scotland Premiership",
+            "image": "https://cdn.footystats.org/img/competitions/scotland-premiership.png",
+            "season": [
+                {
+                    "id": 2,
+                    "year": 20162017,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 164,
+                    "year": 20172018,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 167,
+                    "year": 20152016,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 168,
+                    "year": 20142015,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 169,
+                    "year": 20132014,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 223,
+                    "year": 20122013,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 1600,
+                    "year": 20182019,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 2361,
+                    "year": 20192020,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 4478,
+                    "year": 20202021,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 5992,
+                    "year": 20212022,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 7494,
+                    "year": 20222023,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 9636,
+                    "year": 20232024,
+                    "country": "Scotland"
+                },
+                {
+                    "id": 12455,
+                    "year": 20242025,
+                    "country": "Scotland"
+                }
+            ],
+            "country": "Scotland"
+        },
+        {
+            "name": "Germany Bundesliga",
+            "image": "https://cdn.footystats.org/img/competitions/germany-bundesliga.png",
+            "season": [
+                {
+                    "id": 3,
+                    "year": 20162017,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4,
+                    "year": 20152016,
+                    "country": "Germany"
+                },
+                {
+                    "id": 5,
+                    "year": 20142015,
+                    "country": "Germany"
+                },
+                {
+                    "id": 7,
+                    "year": 20132014,
+                    "country": "Germany"
+                },
+                {
+                    "id": 177,
+                    "year": 20172018,
+                    "country": "Germany"
+                },
+                {
+                    "id": 1636,
+                    "year": 20182019,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4105,
+                    "year": 20122013,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4123,
+                    "year": 20112012,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4133,
+                    "year": 20102011,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4140,
+                    "year": 20092010,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4392,
+                    "year": 20192020,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4624,
+                    "year": 20082009,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4628,
+                    "year": 20072008,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4629,
+                    "year": 20062007,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4673,
+                    "year": 20202021,
+                    "country": "Germany"
+                },
+                {
+                    "id": 6192,
+                    "year": 20212022,
+                    "country": "Germany"
+                },
+                {
+                    "id": 7664,
+                    "year": 20222023,
+                    "country": "Germany"
+                },
+                {
+                    "id": 9655,
+                    "year": 20232024,
+                    "country": "Germany"
+                },
+                {
+                    "id": 12529,
+                    "year": 20242025,
+                    "country": "Germany"
+                }
+            ],
+            "country": "Germany"
+        },
+        {
+            "name": "Europe UEFA Champions League",
+            "image": "https://cdn.footystats.org/img/competitions/europe-uefa-champions-league.png",
+            "season": [
+                {
+                    "id": 6,
+                    "year": 20162017,
+                    "country": "Europe"
+                },
+                {
+                    "id": 157,
+                    "year": 20152016,
+                    "country": "Europe"
+                },
+                {
+                    "id": 158,
+                    "year": 20142015,
+                    "country": "Europe"
+                },
+                {
+                    "id": 159,
+                    "year": 20132014,
+                    "country": "Europe"
+                },
+                {
+                    "id": 247,
+                    "year": 20172018,
+                    "country": "Europe"
+                },
+                {
+                    "id": 1534,
+                    "year": 20182019,
+                    "country": "Europe"
+                },
+                {
+                    "id": 2202,
+                    "year": 20192020,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4053,
+                    "year": 20122013,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4062,
+                    "year": 20112012,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4071,
+                    "year": 20102011,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4081,
+                    "year": 20092010,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4655,
+                    "year": 20202021,
+                    "country": "Europe"
+                },
+                {
+                    "id": 5977,
+                    "year": 20212022,
+                    "country": "Europe"
+                },
+                {
+                    "id": 7455,
+                    "year": 20222023,
+                    "country": "Europe"
+                },
+                {
+                    "id": 9543,
+                    "year": 20232024,
+                    "country": "Europe"
+                },
+                {
+                    "id": 12321,
+                    "year": 20242025,
+                    "country": "Europe"
+                }
+            ],
+            "country": "Europe"
+        },
+        {
+            "name": "England Premier League",
+            "image": "https://cdn.footystats.org/img/competitions/england-premier-league.png",
+            "season": [
+                {
+                    "id": 9,
+                    "year": 20162017,
+                    "country": "England"
+                },
+                {
+                    "id": 10,
+                    "year": 20152016,
+                    "country": "England"
+                },
+                {
+                    "id": 11,
+                    "year": 20142015,
+                    "country": "England"
+                },
+                {
+                    "id": 12,
+                    "year": 20132014,
+                    "country": "England"
+                },
+                {
+                    "id": 161,
+                    "year": 20172018,
+                    "country": "England"
+                },
+                {
+                    "id": 246,
+                    "year": 20122013,
+                    "country": "England"
+                },
+                {
+                    "id": 1625,
+                    "year": 20182019,
+                    "country": "England"
+                },
+                {
+                    "id": 2012,
+                    "year": 20192020,
+                    "country": "England"
+                },
+                {
+                    "id": 3119,
+                    "year": 20112012,
+                    "country": "England"
+                },
+                {
+                    "id": 3121,
+                    "year": 20102011,
+                    "country": "England"
+                },
+                {
+                    "id": 3125,
+                    "year": 20092010,
+                    "country": "England"
+                },
+                {
+                    "id": 3131,
+                    "year": 20082009,
+                    "country": "England"
+                },
+                {
+                    "id": 3137,
+                    "year": 20072008,
+                    "country": "England"
+                },
+                {
+                    "id": 4759,
+                    "year": 20202021,
+                    "country": "England"
+                },
+                {
+                    "id": 6135,
+                    "year": 20212022,
+                    "country": "England"
+                },
+                {
+                    "id": 7704,
+                    "year": 20222023,
+                    "country": "England"
+                },
+                {
+                    "id": 9660,
+                    "year": 20232024,
+                    "country": "England"
+                },
+                {
+                    "id": 12325,
+                    "year": 20242025,
+                    "country": "England"
+                }
+            ],
+            "country": "England"
+        },
+        {
+            "name": "Portugal Liga NOS",
+            "image": "https://cdn.footystats.org/img/competitions/portugal-liga-nos.png",
+            "season": [
+                {
+                    "id": 13,
+                    "year": 20162017,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 14,
+                    "year": 20152016,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 17,
+                    "year": 20142015,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 18,
+                    "year": 20132014,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 173,
+                    "year": 20172018,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 1593,
+                    "year": 20182019,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 2321,
+                    "year": 20192020,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4225,
+                    "year": 20122013,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4232,
+                    "year": 20112012,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4238,
+                    "year": 20102011,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4885,
+                    "year": 20202021,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 6117,
+                    "year": 20212022,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 7731,
+                    "year": 20222023,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 9984,
+                    "year": 20232024,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 12931,
+                    "year": 20242025,
+                    "country": "Portugal"
+                }
+            ],
+            "country": "Portugal"
+        },
+        {
+            "name": "Turkey S\u00fcper Lig",
+            "image": "https://cdn.footystats.org/img/competitions/turkey-super-lig.png",
+            "season": [
+                {
+                    "id": 19,
+                    "year": 20162017,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 20,
+                    "year": 20152016,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 21,
+                    "year": 20142015,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 175,
+                    "year": 20172018,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 1614,
+                    "year": 20182019,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 2648,
+                    "year": 20192020,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 4840,
+                    "year": 20202021,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 6125,
+                    "year": 20212022,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 7768,
+                    "year": 20222023,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 9913,
+                    "year": 20232024,
+                    "country": "Turkey"
+                },
+                {
+                    "id": 12641,
+                    "year": 20242025,
+                    "country": "Turkey"
+                }
+            ],
+            "country": "Turkey"
+        },
+        {
+            "name": "England Championship",
+            "image": "https://cdn.footystats.org/img/competitions/england-championship.png",
+            "season": [
+                {
+                    "id": 22,
+                    "year": 20162017,
+                    "country": "England"
+                },
+                {
+                    "id": 25,
+                    "year": 20152016,
+                    "country": "England"
+                },
+                {
+                    "id": 26,
+                    "year": 20142015,
+                    "country": "England"
+                },
+                {
+                    "id": 27,
+                    "year": 20132014,
+                    "country": "England"
+                },
+                {
+                    "id": 165,
+                    "year": 20172018,
+                    "country": "England"
+                },
+                {
+                    "id": 1624,
+                    "year": 20182019,
+                    "country": "England"
+                },
+                {
+                    "id": 2187,
+                    "year": 20192020,
+                    "country": "England"
+                },
+                {
+                    "id": 3141,
+                    "year": 20122013,
+                    "country": "England"
+                },
+                {
+                    "id": 3143,
+                    "year": 20112012,
+                    "country": "England"
+                },
+                {
+                    "id": 3146,
+                    "year": 20102011,
+                    "country": "England"
+                },
+                {
+                    "id": 3147,
+                    "year": 20092010,
+                    "country": "England"
+                },
+                {
+                    "id": 4912,
+                    "year": 20202021,
+                    "country": "England"
+                },
+                {
+                    "id": 6089,
+                    "year": 20212022,
+                    "country": "England"
+                },
+                {
+                    "id": 7593,
+                    "year": 20222023,
+                    "country": "England"
+                },
+                {
+                    "id": 8031,
+                    "year": 20082009,
+                    "country": "England"
+                },
+                {
+                    "id": 9663,
+                    "year": 20232024,
+                    "country": "England"
+                },
+                {
+                    "id": 12451,
+                    "year": 20242025,
+                    "country": "England"
+                }
+            ],
+            "country": "England"
+        },
+        {
+            "name": "England EFL League One",
+            "image": "https://cdn.footystats.org/img/competitions/england-efl-league-one.png",
+            "season": [
+                {
+                    "id": 28,
+                    "year": 20162017,
+                    "country": "England"
+                },
+                {
+                    "id": 29,
+                    "year": 20152016,
+                    "country": "England"
+                },
+                {
+                    "id": 30,
+                    "year": 20142015,
+                    "country": "England"
+                },
+                {
+                    "id": 31,
+                    "year": 20132014,
+                    "country": "England"
+                },
+                {
+                    "id": 166,
+                    "year": 20172018,
+                    "country": "England"
+                },
+                {
+                    "id": 1564,
+                    "year": 20182019,
+                    "country": "England"
+                },
+                {
+                    "id": 2191,
+                    "year": 20192020,
+                    "country": "England"
+                },
+                {
+                    "id": 3950,
+                    "year": 20122013,
+                    "country": "England"
+                },
+                {
+                    "id": 3951,
+                    "year": 20092010,
+                    "country": "England"
+                },
+                {
+                    "id": 3952,
+                    "year": 20112012,
+                    "country": "England"
+                },
+                {
+                    "id": 4845,
+                    "year": 20202021,
+                    "country": "England"
+                },
+                {
+                    "id": 4923,
+                    "year": 20102011,
+                    "country": "England"
+                },
+                {
+                    "id": 6017,
+                    "year": 20212022,
+                    "country": "England"
+                },
+                {
+                    "id": 7570,
+                    "year": 20222023,
+                    "country": "England"
+                },
+                {
+                    "id": 9582,
+                    "year": 20232024,
+                    "country": "England"
+                },
+                {
+                    "id": 12446,
+                    "year": 20242025,
+                    "country": "England"
+                }
+            ],
+            "country": "England"
+        },
+        {
+            "name": "England EFL League Two",
+            "image": "https://cdn.footystats.org/img/competitions/england-efl-league-two.png",
+            "season": [
+                {
+                    "id": 32,
+                    "year": 20162017,
+                    "country": "England"
+                },
+                {
+                    "id": 33,
+                    "year": 20152016,
+                    "country": "England"
+                },
+                {
+                    "id": 170,
+                    "year": 20172018,
+                    "country": "England"
+                },
+                {
+                    "id": 1574,
+                    "year": 20182019,
+                    "country": "England"
+                },
+                {
+                    "id": 2192,
+                    "year": 20192020,
+                    "country": "England"
+                },
+                {
+                    "id": 4844,
+                    "year": 20202021,
+                    "country": "England"
+                },
+                {
+                    "id": 6015,
+                    "year": 20212022,
+                    "country": "England"
+                },
+                {
+                    "id": 7574,
+                    "year": 20222023,
+                    "country": "England"
+                },
+                {
+                    "id": 9581,
+                    "year": 20232024,
+                    "country": "England"
+                },
+                {
+                    "id": 12422,
+                    "year": 20242025,
+                    "country": "England"
+                }
+            ],
+            "country": "England"
+        },
+        {
+            "name": "Spain La Liga",
+            "image": "https://cdn.footystats.org/img/competitions/spain-la-liga.png",
+            "season": [
+                {
+                    "id": 34,
+                    "year": 20162017,
+                    "country": "Spain"
+                },
+                {
+                    "id": 35,
+                    "year": 20152016,
+                    "country": "Spain"
+                },
+                {
+                    "id": 36,
+                    "year": 20142015,
+                    "country": "Spain"
+                },
+                {
+                    "id": 37,
+                    "year": 20132014,
+                    "country": "Spain"
+                },
+                {
+                    "id": 38,
+                    "year": 20122013,
+                    "country": "Spain"
+                },
+                {
+                    "id": 171,
+                    "year": 20172018,
+                    "country": "Spain"
+                },
+                {
+                    "id": 1677,
+                    "year": 20182019,
+                    "country": "Spain"
+                },
+                {
+                    "id": 2319,
+                    "year": 20192020,
+                    "country": "Spain"
+                },
+                {
+                    "id": 3631,
+                    "year": 20112012,
+                    "country": "Spain"
+                },
+                {
+                    "id": 3632,
+                    "year": 20102011,
+                    "country": "Spain"
+                },
+                {
+                    "id": 3636,
+                    "year": 20092010,
+                    "country": "Spain"
+                },
+                {
+                    "id": 3637,
+                    "year": 20082009,
+                    "country": "Spain"
+                },
+                {
+                    "id": 4944,
+                    "year": 20202021,
+                    "country": "Spain"
+                },
+                {
+                    "id": 6211,
+                    "year": 20212022,
+                    "country": "Spain"
+                },
+                {
+                    "id": 7665,
+                    "year": 20222023,
+                    "country": "Spain"
+                },
+                {
+                    "id": 9665,
+                    "year": 20232024,
+                    "country": "Spain"
+                },
+                {
+                    "id": 12316,
+                    "year": 20242025,
+                    "country": "Spain"
+                }
+            ],
+            "country": "Spain"
+        },
+        {
+            "name": "Spain Segunda Divisi\u00f3n",
+            "image": "https://cdn.footystats.org/img/competitions/spain-segunda-division.png",
+            "season": [
+                {
+                    "id": 39,
+                    "year": 20162017,
+                    "country": "Spain"
+                },
+                {
+                    "id": 40,
+                    "year": 20152016,
+                    "country": "Spain"
+                },
+                {
+                    "id": 41,
+                    "year": 20142015,
+                    "country": "Spain"
+                },
+                {
+                    "id": 42,
+                    "year": 20132014,
+                    "country": "Spain"
+                },
+                {
+                    "id": 43,
+                    "year": 20122013,
+                    "country": "Spain"
+                },
+                {
+                    "id": 172,
+                    "year": 20172018,
+                    "country": "Spain"
+                },
+                {
+                    "id": 1670,
+                    "year": 20182019,
+                    "country": "Spain"
+                },
+                {
+                    "id": 2415,
+                    "year": 20192020,
+                    "country": "Spain"
+                },
+                {
+                    "id": 4167,
+                    "year": 20112012,
+                    "country": "Spain"
+                },
+                {
+                    "id": 4245,
+                    "year": 20102011,
+                    "country": "Spain"
+                },
+                {
+                    "id": 4249,
+                    "year": 20092010,
+                    "country": "Spain"
+                },
+                {
+                    "id": 4842,
+                    "year": 20202021,
+                    "country": "Spain"
+                },
+                {
+                    "id": 6120,
+                    "year": 20212022,
+                    "country": "Spain"
+                },
+                {
+                    "id": 7592,
+                    "year": 20222023,
+                    "country": "Spain"
+                },
+                {
+                    "id": 9675,
+                    "year": 20232024,
+                    "country": "Spain"
+                },
+                {
+                    "id": 12467,
+                    "year": 20242025,
+                    "country": "Spain"
+                }
+            ],
+            "country": "Spain"
+        },
+        {
+            "name": "Norway Eliteserien",
+            "image": "https://cdn.footystats.org/img/competitions/norway-eliteserien.png",
+            "season": [
+                {
+                    "id": 44,
+                    "year": 2016,
+                    "country": "Norway"
+                },
+                {
+                    "id": 45,
+                    "year": 2015,
+                    "country": "Norway"
+                },
+                {
+                    "id": 46,
+                    "year": 2017,
+                    "country": "Norway"
+                },
+                {
+                    "id": 993,
+                    "year": 2018,
+                    "country": "Norway"
+                },
+                {
+                    "id": 1839,
+                    "year": 2019,
+                    "country": "Norway"
+                },
+                {
+                    "id": 3695,
+                    "year": 2020,
+                    "country": "Norway"
+                },
+                {
+                    "id": 4224,
+                    "year": 2014,
+                    "country": "Norway"
+                },
+                {
+                    "id": 4231,
+                    "year": 2013,
+                    "country": "Norway"
+                },
+                {
+                    "id": 4237,
+                    "year": 2012,
+                    "country": "Norway"
+                },
+                {
+                    "id": 4242,
+                    "year": 2011,
+                    "country": "Norway"
+                },
+                {
+                    "id": 4244,
+                    "year": 2010,
+                    "country": "Norway"
+                },
+                {
+                    "id": 5496,
+                    "year": 2021,
+                    "country": "Norway"
+                },
+                {
+                    "id": 7048,
+                    "year": 2022,
+                    "country": "Norway"
+                },
+                {
+                    "id": 8739,
+                    "year": 2023,
+                    "country": "Norway"
+                },
+                {
+                    "id": 10976,
+                    "year": 2024,
+                    "country": "Norway"
+                }
+            ],
+            "country": "Norway"
+        },
+        {
+            "name": "Netherlands Eredivisie",
+            "image": "https://cdn.footystats.org/img/competitions/netherlands-eredivisie.png",
+            "season": [
+                {
+                    "id": 51,
+                    "year": 20162017,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 52,
+                    "year": 20152016,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 53,
+                    "year": 20142015,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 54,
+                    "year": 20132014,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 178,
+                    "year": 20172018,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 1585,
+                    "year": 20182019,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 2272,
+                    "year": 20192020,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4226,
+                    "year": 20122013,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4234,
+                    "year": 20112012,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4746,
+                    "year": 20202021,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 5951,
+                    "year": 20212022,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 7482,
+                    "year": 20222023,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 9653,
+                    "year": 20232024,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 12322,
+                    "year": 20242025,
+                    "country": "Netherlands"
+                }
+            ],
+            "country": "Netherlands"
+        },
+        {
+            "name": "Netherlands Eerste Divisie",
+            "image": "https://cdn.footystats.org/img/competitions/netherlands-eerste-divisie.png",
+            "season": [
+                {
+                    "id": 55,
+                    "year": 20162017,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 56,
+                    "year": 20152016,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 57,
+                    "year": 20142015,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 179,
+                    "year": 20172018,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 1584,
+                    "year": 20182019,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 2273,
+                    "year": 20192020,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4228,
+                    "year": 20132014,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4236,
+                    "year": 20122013,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4243,
+                    "year": 20112012,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4246,
+                    "year": 20102011,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4247,
+                    "year": 20092010,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 4748,
+                    "year": 20202021,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 5950,
+                    "year": 20212022,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 7484,
+                    "year": 20222023,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 9654,
+                    "year": 20232024,
+                    "country": "Netherlands"
+                },
+                {
+                    "id": 12317,
+                    "year": 20242025,
+                    "country": "Netherlands"
+                }
+            ],
+            "country": "Netherlands"
+        },
+        {
+            "name": "Finland Veikkausliiga",
+            "image": "https://cdn.footystats.org/img/competitions/finland-veikkausliiga.png",
+            "season": [
+                {
+                    "id": 58,
+                    "year": 2017,
+                    "country": "Finland"
+                },
+                {
+                    "id": 59,
+                    "year": 2016,
+                    "country": "Finland"
+                },
+                {
+                    "id": 60,
+                    "year": 2014,
+                    "country": "Finland"
+                },
+                {
+                    "id": 72,
+                    "year": 2015,
+                    "country": "Finland"
+                },
+                {
+                    "id": 1191,
+                    "year": 2018,
+                    "country": "Finland"
+                },
+                {
+                    "id": 1874,
+                    "year": 2019,
+                    "country": "Finland"
+                },
+                {
+                    "id": 3645,
+                    "year": 2020,
+                    "country": "Finland"
+                },
+                {
+                    "id": 5477,
+                    "year": 2021,
+                    "country": "Finland"
+                },
+                {
+                    "id": 7120,
+                    "year": 2022,
+                    "country": "Finland"
+                },
+                {
+                    "id": 8935,
+                    "year": 2023,
+                    "country": "Finland"
+                },
+                {
+                    "id": 11120,
+                    "year": 2024,
+                    "country": "Finland"
+                }
+            ],
+            "country": "Finland"
+        },
+        {
+            "name": "France Ligue 1",
+            "image": "https://cdn.footystats.org/img/competitions/france-ligue-1.png",
+            "season": [
+                {
+                    "id": 65,
+                    "year": 20162017,
+                    "country": "France"
+                },
+                {
+                    "id": 66,
+                    "year": 20142015,
+                    "country": "France"
+                },
+                {
+                    "id": 67,
+                    "year": 20132014,
+                    "country": "France"
+                },
+                {
+                    "id": 75,
+                    "year": 20152016,
+                    "country": "France"
+                },
+                {
+                    "id": 180,
+                    "year": 20172018,
+                    "country": "France"
+                },
+                {
+                    "id": 1508,
+                    "year": 20182019,
+                    "country": "France"
+                },
+                {
+                    "id": 2392,
+                    "year": 20192020,
+                    "country": "France"
+                },
+                {
+                    "id": 4127,
+                    "year": 20122013,
+                    "country": "France"
+                },
+                {
+                    "id": 4136,
+                    "year": 20112012,
+                    "country": "France"
+                },
+                {
+                    "id": 4193,
+                    "year": 20102011,
+                    "country": "France"
+                },
+                {
+                    "id": 4199,
+                    "year": 20092010,
+                    "country": "France"
+                },
+                {
+                    "id": 4505,
+                    "year": 20202021,
+                    "country": "France"
+                },
+                {
+                    "id": 6019,
+                    "year": 20212022,
+                    "country": "France"
+                },
+                {
+                    "id": 7500,
+                    "year": 20222023,
+                    "country": "France"
+                },
+                {
+                    "id": 9674,
+                    "year": 20232024,
+                    "country": "France"
+                },
+                {
+                    "id": 12337,
+                    "year": 20242025,
+                    "country": "France"
+                }
+            ],
+            "country": "France"
+        },
+        {
+            "name": "Italy Serie A",
+            "image": "https://cdn.footystats.org/img/competitions/italy-serie-a.png",
+            "season": [
+                {
+                    "id": 68,
+                    "year": 20162017,
+                    "country": "Italy"
+                },
+                {
+                    "id": 69,
+                    "year": 20152016,
+                    "country": "Italy"
+                },
+                {
+                    "id": 70,
+                    "year": 20142015,
+                    "country": "Italy"
+                },
+                {
+                    "id": 71,
+                    "year": 20132014,
+                    "country": "Italy"
+                },
+                {
+                    "id": 182,
+                    "year": 20172018,
+                    "country": "Italy"
+                },
+                {
+                    "id": 1680,
+                    "year": 20182019,
+                    "country": "Italy"
+                },
+                {
+                    "id": 2588,
+                    "year": 20192020,
+                    "country": "Italy"
+                },
+                {
+                    "id": 3940,
+                    "year": 20112012,
+                    "country": "Italy"
+                },
+                {
+                    "id": 3941,
+                    "year": 20082009,
+                    "country": "Italy"
+                },
+                {
+                    "id": 3942,
+                    "year": 20092010,
+                    "country": "Italy"
+                },
+                {
+                    "id": 3945,
+                    "year": 20122013,
+                    "country": "Italy"
+                },
+                {
+                    "id": 4889,
+                    "year": 20202021,
+                    "country": "Italy"
+                },
+                {
+                    "id": 6198,
+                    "year": 20212022,
+                    "country": "Italy"
+                },
+                {
+                    "id": 7608,
+                    "year": 20222023,
+                    "country": "Italy"
+                },
+                {
+                    "id": 9697,
+                    "year": 20232024,
+                    "country": "Italy"
+                },
+                {
+                    "id": 11181,
+                    "year": 20102011,
+                    "country": "Italy"
+                },
+                {
+                    "id": 12530,
+                    "year": 20242025,
+                    "country": "Italy"
+                }
+            ],
+            "country": "Italy"
+        },
+        {
+            "name": "France Ligue 2",
+            "image": "https://cdn.footystats.org/img/competitions/france-ligue-2.png",
+            "season": [
+                {
+                    "id": 73,
+                    "year": 20162017,
+                    "country": "France"
+                },
+                {
+                    "id": 74,
+                    "year": 20152016,
+                    "country": "France"
+                },
+                {
+                    "id": 76,
+                    "year": 20142015,
+                    "country": "France"
+                },
+                {
+                    "id": 181,
+                    "year": 20172018,
+                    "country": "France"
+                },
+                {
+                    "id": 1579,
+                    "year": 20182019,
+                    "country": "France"
+                },
+                {
+                    "id": 2396,
+                    "year": 20192020,
+                    "country": "France"
+                },
+                {
+                    "id": 4164,
+                    "year": 20132014,
+                    "country": "France"
+                },
+                {
+                    "id": 4185,
+                    "year": 20122013,
+                    "country": "France"
+                },
+                {
+                    "id": 4645,
+                    "year": 20202021,
+                    "country": "France"
+                },
+                {
+                    "id": 6018,
+                    "year": 20212022,
+                    "country": "France"
+                },
+                {
+                    "id": 7501,
+                    "year": 20222023,
+                    "country": "France"
+                },
+                {
+                    "id": 9621,
+                    "year": 20232024,
+                    "country": "France"
+                },
+                {
+                    "id": 12338,
+                    "year": 20242025,
+                    "country": "France"
+                }
+            ],
+            "country": "France"
+        },
+        {
+            "name": "Italy Serie B",
+            "image": "https://cdn.footystats.org/img/competitions/italy-serie-b.png",
+            "season": [
+                {
+                    "id": 77,
+                    "year": 20162017,
+                    "country": "Italy"
+                },
+                {
+                    "id": 78,
+                    "year": 20152016,
+                    "country": "Italy"
+                },
+                {
+                    "id": 79,
+                    "year": 20142015,
+                    "country": "Italy"
+                },
+                {
+                    "id": 80,
+                    "year": 20132014,
+                    "country": "Italy"
+                },
+                {
+                    "id": 81,
+                    "year": 20122013,
+                    "country": "Italy"
+                },
+                {
+                    "id": 183,
+                    "year": 20172018,
+                    "country": "Italy"
+                },
+                {
+                    "id": 1749,
+                    "year": 20182019,
+                    "country": "Italy"
+                },
+                {
+                    "id": 2642,
+                    "year": 20192020,
+                    "country": "Italy"
+                },
+                {
+                    "id": 3946,
+                    "year": 20092010,
+                    "country": "Italy"
+                },
+                {
+                    "id": 3948,
+                    "year": 20102011,
+                    "country": "Italy"
+                },
+                {
+                    "id": 3949,
+                    "year": 20112012,
+                    "country": "Italy"
+                },
+                {
+                    "id": 4972,
+                    "year": 20202021,
+                    "country": "Italy"
+                },
+                {
+                    "id": 6205,
+                    "year": 20212022,
+                    "country": "Italy"
+                },
+                {
+                    "id": 7864,
+                    "year": 20222023,
+                    "country": "Italy"
+                },
+                {
+                    "id": 9808,
+                    "year": 20232024,
+                    "country": "Italy"
+                },
+                {
+                    "id": 12621,
+                    "year": 20242025,
+                    "country": "Italy"
+                }
+            ],
+            "country": "Italy"
+        },
+        {
+            "name": "Belgium Pro League",
+            "image": "https://cdn.footystats.org/img/competitions/belgium-pro-league.png",
+            "season": [
+                {
+                    "id": 82,
+                    "year": 20162017,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 112,
+                    "year": 20152016,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 184,
+                    "year": 20172018,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 1537,
+                    "year": 20182019,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 2262,
+                    "year": 20192020,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 4567,
+                    "year": 20202021,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 6079,
+                    "year": 20212022,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 7544,
+                    "year": 20222023,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 9577,
+                    "year": 20232024,
+                    "country": "Belgium"
+                },
+                {
+                    "id": 12137,
+                    "year": 20242025,
+                    "country": "Belgium"
+                }
+            ],
+            "country": "Belgium"
+        },
+        {
+            "name": "Germany 2. Bundesliga",
+            "image": "https://cdn.footystats.org/img/competitions/germany-2-bundesliga.png",
+            "season": [
+                {
+                    "id": 83,
+                    "year": 20162017,
+                    "country": "Germany"
+                },
+                {
+                    "id": 84,
+                    "year": 20152016,
+                    "country": "Germany"
+                },
+                {
+                    "id": 85,
+                    "year": 20142015,
+                    "country": "Germany"
+                },
+                {
+                    "id": 188,
+                    "year": 20172018,
+                    "country": "Germany"
+                },
+                {
+                    "id": 1578,
+                    "year": 20182019,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4131,
+                    "year": 20132014,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4168,
+                    "year": 20122013,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4195,
+                    "year": 20112012,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4200,
+                    "year": 20102011,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4388,
+                    "year": 20192020,
+                    "country": "Germany"
+                },
+                {
+                    "id": 4676,
+                    "year": 20202021,
+                    "country": "Germany"
+                },
+                {
+                    "id": 6020,
+                    "year": 20212022,
+                    "country": "Germany"
+                },
+                {
+                    "id": 7499,
+                    "year": 20222023,
+                    "country": "Germany"
+                },
+                {
+                    "id": 9656,
+                    "year": 20232024,
+                    "country": "Germany"
+                },
+                {
+                    "id": 12528,
+                    "year": 20242025,
+                    "country": "Germany"
+                }
+            ],
+            "country": "Germany"
+        },
+        {
+            "name": "Austria Bundesliga",
+            "image": "https://cdn.footystats.org/img/competitions/austria-bundesliga.png",
+            "season": [
+                {
+                    "id": 89,
+                    "year": 20162017,
+                    "country": "Austria"
+                },
+                {
+                    "id": 90,
+                    "year": 20152016,
+                    "country": "Austria"
+                },
+                {
+                    "id": 91,
+                    "year": 20142015,
+                    "country": "Austria"
+                },
+                {
+                    "id": 92,
+                    "year": 20132014,
+                    "country": "Austria"
+                },
+                {
+                    "id": 190,
+                    "year": 20172018,
+                    "country": "Austria"
+                },
+                {
+                    "id": 1556,
+                    "year": 20182019,
+                    "country": "Austria"
+                },
+                {
+                    "id": 4384,
+                    "year": 20192020,
+                    "country": "Austria"
+                },
+                {
+                    "id": 4861,
+                    "year": 20202021,
+                    "country": "Austria"
+                },
+                {
+                    "id": 6008,
+                    "year": 20212022,
+                    "country": "Austria"
+                },
+                {
+                    "id": 7890,
+                    "year": 20222023,
+                    "country": "Austria"
+                },
+                {
+                    "id": 9954,
+                    "year": 20232024,
+                    "country": "Austria"
+                },
+                {
+                    "id": 12472,
+                    "year": 20242025,
+                    "country": "Austria"
+                }
+            ],
+            "country": "Austria"
+        },
+        {
+            "name": "Sweden Allsvenskan",
+            "image": "https://cdn.footystats.org/img/competitions/sweden-allsvenskan.png",
+            "season": [
+                {
+                    "id": 104,
+                    "year": 2017,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 105,
+                    "year": 2016,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 106,
+                    "year": 2015,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 107,
+                    "year": 2014,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 994,
+                    "year": 2018,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 1848,
+                    "year": 2019,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 3703,
+                    "year": 2020,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 4307,
+                    "year": 2013,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 4315,
+                    "year": 2011,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 4329,
+                    "year": 2010,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 5505,
+                    "year": 2021,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 7064,
+                    "year": 2022,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 8737,
+                    "year": 2023,
+                    "country": "Sweden"
+                },
+                {
+                    "id": 10969,
+                    "year": 2024,
+                    "country": "Sweden"
+                }
+            ],
+            "country": "Sweden"
+        },
+        {
+            "name": "Armenia Armenian Premier League",
+            "image": "https://cdn.footystats.org/img/competitions/armenia-armenian-premier-league.png",
+            "season": [
+                {
+                    "id": 133,
+                    "year": 20162017,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 134,
+                    "year": 20142015,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 135,
+                    "year": 20132014,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 185,
+                    "year": 20172018,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 216,
+                    "year": 20152016,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 1671,
+                    "year": 20182019,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 2403,
+                    "year": 20192020,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 4613,
+                    "year": 20202021,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 6151,
+                    "year": 20212022,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 7863,
+                    "year": 20222023,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 9703,
+                    "year": 20232024,
+                    "country": "Armenia"
+                },
+                {
+                    "id": 12638,
+                    "year": 20242025,
+                    "country": "Armenia"
+                }
+            ],
+            "country": "Armenia"
+        },
+        {
+            "name": "Switzerland Super League",
+            "image": "https://cdn.footystats.org/img/competitions/switzerland-super-league.png",
+            "season": [
+                {
+                    "id": 136,
+                    "year": 20162017,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 137,
+                    "year": 20152016,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 138,
+                    "year": 20142015,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 139,
+                    "year": 20132014,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 140,
+                    "year": 20122013,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 186,
+                    "year": 20172018,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 1610,
+                    "year": 20182019,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 2249,
+                    "year": 20192020,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 4906,
+                    "year": 20202021,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 6044,
+                    "year": 20212022,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 7504,
+                    "year": 20222023,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 9580,
+                    "year": 20232024,
+                    "country": "Switzerland"
+                },
+                {
+                    "id": 12326,
+                    "year": 20242025,
+                    "country": "Switzerland"
+                }
+            ],
+            "country": "Switzerland"
+        },
+        {
+            "name": "Azerbaijan Premyer Liqas\u0131",
+            "image": "https://cdn.footystats.org/img/competitions/azerbaijan-premyer-liqasi.png",
+            "season": [
+                {
+                    "id": 143,
+                    "year": 20162017,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 144,
+                    "year": 20152016,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 145,
+                    "year": 20142015,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 146,
+                    "year": 20132014,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 194,
+                    "year": 20172018,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 1713,
+                    "year": 20182019,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 2641,
+                    "year": 20192020,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 4754,
+                    "year": 20202021,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 6221,
+                    "year": 20212022,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 7850,
+                    "year": 20222023,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 9903,
+                    "year": 20232024,
+                    "country": "Azerbaijan"
+                },
+                {
+                    "id": 12740,
+                    "year": 20242025,
+                    "country": "Azerbaijan"
+                }
+            ],
+            "country": "Azerbaijan"
+        },
+        {
+            "name": "Portugal LigaPro",
+            "image": "https://cdn.footystats.org/img/competitions/portugal-ligapro.png",
+            "season": [
+                {
+                    "id": 174,
+                    "year": 20172018,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 965,
+                    "year": 20162017,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 966,
+                    "year": 20152016,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 1594,
+                    "year": 20182019,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 2320,
+                    "year": 20192020,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4284,
+                    "year": 20142015,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4291,
+                    "year": 20122013,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4309,
+                    "year": 20102011,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4322,
+                    "year": 20092010,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 4886,
+                    "year": 20202021,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 6116,
+                    "year": 20212022,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 7732,
+                    "year": 20222023,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 9704,
+                    "year": 20232024,
+                    "country": "Portugal"
+                },
+                {
+                    "id": 12585,
+                    "year": 20242025,
+                    "country": "Portugal"
+                }
+            ],
+            "country": "Portugal"
+        },
+        {
+            "name": "Latvia Virsliga",
+            "image": "https://cdn.footystats.org/img/competitions/latvia-virsliga.png",
+            "season": [
+                {
+                    "id": 202,
+                    "year": 2017,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 203,
+                    "year": 2016,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 204,
+                    "year": 2015,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 205,
+                    "year": 2014,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 206,
+                    "year": 2013,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 1171,
+                    "year": 2018,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 1930,
+                    "year": 2019,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 3566,
+                    "year": 2020,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 5622,
+                    "year": 2021,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 7132,
+                    "year": 2022,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 9043,
+                    "year": 2023,
+                    "country": "Latvia"
+                },
+                {
+                    "id": 11280,
+                    "year": 2024,
+                    "country": "Latvia"
+                }
+            ],
+            "country": "Latvia"
+        },
+        {
+            "name": "Greece Super League",
+            "image": "https://cdn.footystats.org/img/competitions/greece-super-league.png",
+            "season": [
+                {
+                    "id": 207,
+                    "year": 20172018,
+                    "country": "Greece"
+                },
+                {
+                    "id": 208,
+                    "year": 20162017,
+                    "country": "Greece"
+                },
+                {
+                    "id": 209,
+                    "year": 20152016,
+                    "country": "Greece"
+                },
+                {
+                    "id": 933,
+                    "year": 20142015,
+                    "country": "Greece"
+                },
+                {
+                    "id": 934,
+                    "year": 20132014,
+                    "country": "Greece"
+                },
+                {
+                    "id": 1752,
+                    "year": 20182019,
+                    "country": "Greece"
+                },
+                {
+                    "id": 2667,
+                    "year": 20192020,
+                    "country": "Greece"
+                },
+                {
+                    "id": 4957,
+                    "year": 20202021,
+                    "country": "Greece"
+                },
+                {
+                    "id": 6282,
+                    "year": 20212022,
+                    "country": "Greece"
+                },
+                {
+                    "id": 7954,
+                    "year": 20222023,
+                    "country": "Greece"
+                },
+                {
+                    "id": 9889,
+                    "year": 20232024,
+                    "country": "Greece"
+                },
+                {
+                    "id": 12734,
+                    "year": 20242025,
+                    "country": "Greece"
+                }
+            ],
+            "country": "Greece"
+        },
+        {
+            "name": "Poland Ekstraklasa",
+            "image": "https://cdn.footystats.org/img/competitions/poland-ekstraklasa.png",
+            "season": [
+                {
+                    "id": 255,
+                    "year": 20172018,
+                    "country": "Poland"
+                },
+                {
+                    "id": 256,
+                    "year": 20152016,
+                    "country": "Poland"
+                },
+                {
+                    "id": 257,
+                    "year": 20132014,
+                    "country": "Poland"
+                },
+                {
+                    "id": 278,
+                    "year": 20162017,
+                    "country": "Poland"
+                },
+                {
+                    "id": 279,
+                    "year": 20142015,
+                    "country": "Poland"
+                },
+                {
+                    "id": 1589,
+                    "year": 20182019,
+                    "country": "Poland"
+                },
+                {
+                    "id": 2328,
+                    "year": 20192020,
+                    "country": "Poland"
+                },
+                {
+                    "id": 3972,
+                    "year": 20092010,
+                    "country": "Poland"
+                },
+                {
+                    "id": 3973,
+                    "year": 20122013,
+                    "country": "Poland"
+                },
+                {
+                    "id": 3974,
+                    "year": 20102011,
+                    "country": "Poland"
+                },
+                {
+                    "id": 3975,
+                    "year": 20112012,
+                    "country": "Poland"
+                },
+                {
+                    "id": 4760,
+                    "year": 20202021,
+                    "country": "Poland"
+                },
+                {
+                    "id": 5948,
+                    "year": 20212022,
+                    "country": "Poland"
+                },
+                {
+                    "id": 7428,
+                    "year": 20222023,
+                    "country": "Poland"
+                },
+                {
+                    "id": 9553,
+                    "year": 20232024,
+                    "country": "Poland"
+                },
+                {
+                    "id": 12120,
+                    "year": 20242025,
+                    "country": "Poland"
+                }
+            ],
+            "country": "Poland"
+        },
+        {
+            "name": "Albania Superliga",
+            "image": "https://cdn.footystats.org/img/competitions/albania-superliga.png",
+            "season": [
+                {
+                    "id": 298,
+                    "year": 20172018,
+                    "country": "Albania"
+                },
+                {
+                    "id": 299,
+                    "year": 20162017,
+                    "country": "Albania"
+                },
+                {
+                    "id": 300,
+                    "year": 20142015,
+                    "country": "Albania"
+                },
+                {
+                    "id": 301,
+                    "year": 20132014,
+                    "country": "Albania"
+                },
+                {
+                    "id": 331,
+                    "year": 20152016,
+                    "country": "Albania"
+                },
+                {
+                    "id": 1642,
+                    "year": 20182019,
+                    "country": "Albania"
+                },
+                {
+                    "id": 2710,
+                    "year": 20192020,
+                    "country": "Albania"
+                },
+                {
+                    "id": 4859,
+                    "year": 20202021,
+                    "country": "Albania"
+                },
+                {
+                    "id": 6220,
+                    "year": 20212022,
+                    "country": "Albania"
+                },
+                {
+                    "id": 7862,
+                    "year": 20222023,
+                    "country": "Albania"
+                },
+                {
+                    "id": 10214,
+                    "year": 20232024,
+                    "country": "Albania"
+                },
+                {
+                    "id": 12699,
+                    "year": 20242025,
+                    "country": "Albania"
+                }
+            ],
+            "country": "Albania"
+        },
+        {
+            "name": "Estonia Meistriliiga",
+            "image": "https://cdn.footystats.org/img/competitions/estonia-meistriliiga.png",
+            "season": [
+                {
+                    "id": 345,
+                    "year": 2017,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 346,
+                    "year": 2016,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 347,
+                    "year": 2015,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 348,
+                    "year": 2014,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 349,
+                    "year": 2013,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 988,
+                    "year": 2018,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 1882,
+                    "year": 2019,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 3675,
+                    "year": 2020,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 5472,
+                    "year": 2021,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 7073,
+                    "year": 2022,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 8898,
+                    "year": 2023,
+                    "country": "Estonia"
+                },
+                {
+                    "id": 11119,
+                    "year": 2024,
+                    "country": "Estonia"
+                }
+            ],
+            "country": "Estonia"
+        },
+        {
+            "name": "Ukraine Ukrainian Premier League",
+            "image": "https://cdn.footystats.org/img/competitions/ukraine-ukrainian-premier-league.png",
+            "season": [
+                {
+                    "id": 360,
+                    "year": 20172018,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 361,
+                    "year": 20162017,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 362,
+                    "year": 20152016,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 363,
+                    "year": 20142015,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 364,
+                    "year": 20132014,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 1618,
+                    "year": 20182019,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 2317,
+                    "year": 20192020,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 4751,
+                    "year": 20202021,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 5943,
+                    "year": 20212022,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 8222,
+                    "year": 20222023,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 9699,
+                    "year": 20232024,
+                    "country": "Ukraine"
+                },
+                {
+                    "id": 12483,
+                    "year": 20242025,
+                    "country": "Ukraine"
+                }
+            ],
+            "country": "Ukraine"
+        },
+        {
+            "name": "Croatia Prva HNL",
+            "image": "https://cdn.footystats.org/img/competitions/croatia-prva-hnl.png",
+            "season": [
+                {
+                    "id": 397,
+                    "year": 20172018,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 401,
+                    "year": 20162017,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 402,
+                    "year": 20152016,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 403,
+                    "year": 20142015,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 404,
+                    "year": 20132014,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 1557,
+                    "year": 20182019,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 2278,
+                    "year": 20192020,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 4660,
+                    "year": 20202021,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 5956,
+                    "year": 20212022,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 7457,
+                    "year": 20222023,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 9542,
+                    "year": 20232024,
+                    "country": "Croatia"
+                },
+                {
+                    "id": 12121,
+                    "year": 20242025,
+                    "country": "Croatia"
+                }
+            ],
+            "country": "Croatia"
+        },
+        {
+            "name": "Serbia SuperLiga",
+            "image": "https://cdn.footystats.org/img/competitions/serbia-superliga.png",
+            "season": [
+                {
+                    "id": 416,
+                    "year": 20172018,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 417,
+                    "year": 20162017,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 418,
+                    "year": 20152016,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 419,
+                    "year": 20142015,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 420,
+                    "year": 20132014,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 1604,
+                    "year": 20182019,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 2254,
+                    "year": 20192020,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 4533,
+                    "year": 20202021,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 6046,
+                    "year": 20212022,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 7492,
+                    "year": 20222023,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 10070,
+                    "year": 20232024,
+                    "country": "Serbia"
+                },
+                {
+                    "id": 12138,
+                    "year": 20242025,
+                    "country": "Serbia"
+                }
+            ],
+            "country": "Serbia"
+        },
+        {
+            "name": "Slovakia Super Liga",
+            "image": "https://cdn.footystats.org/img/competitions/slovakia-super-liga.png",
+            "season": [
+                {
+                    "id": 439,
+                    "year": 20152016,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 440,
+                    "year": 20142015,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 441,
+                    "year": 20132014,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 447,
+                    "year": 20172018,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 448,
+                    "year": 20162017,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 1606,
+                    "year": 20182019,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 2256,
+                    "year": 20192020,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 4572,
+                    "year": 20202021,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 5944,
+                    "year": 20212022,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 7958,
+                    "year": 20222023,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 9671,
+                    "year": 20232024,
+                    "country": "Slovakia"
+                },
+                {
+                    "id": 12944,
+                    "year": 20242025,
+                    "country": "Slovakia"
+                }
+            ],
+            "country": "Slovakia"
+        },
+        {
+            "name": "Czech Republic First League",
+            "image": "https://cdn.footystats.org/img/competitions/czech-republic-first-league.png",
+            "season": [
+                {
+                    "id": 537,
+                    "year": 20172018,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 538,
+                    "year": 20162017,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 539,
+                    "year": 20152016,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 540,
+                    "year": 20142015,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 541,
+                    "year": 20132014,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 1545,
+                    "year": 20182019,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 2268,
+                    "year": 20192020,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 4308,
+                    "year": 20122013,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 4314,
+                    "year": 20112012,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 4328,
+                    "year": 20102011,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 4335,
+                    "year": 20092010,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 4801,
+                    "year": 20202021,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 5938,
+                    "year": 20212022,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 7586,
+                    "year": 20222023,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 9592,
+                    "year": 20232024,
+                    "country": "Czech Republic"
+                },
+                {
+                    "id": 12336,
+                    "year": 20242025,
+                    "country": "Czech Republic"
+                }
+            ],
+            "country": "Czech Republic"
+        },
+        {
+            "name": "Denmark Superliga",
+            "image": "https://cdn.footystats.org/img/competitions/denmark-superliga.png",
+            "season": [
+                {
+                    "id": 561,
+                    "year": 20172018,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 562,
+                    "year": 20162017,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 563,
+                    "year": 20152016,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 564,
+                    "year": 20142015,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 565,
+                    "year": 20132014,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 1538,
+                    "year": 20182019,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 2245,
+                    "year": 20192020,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 4642,
+                    "year": 20202021,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 5961,
+                    "year": 20212022,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 7426,
+                    "year": 20222023,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 9545,
+                    "year": 20232024,
+                    "country": "Denmark"
+                },
+                {
+                    "id": 12132,
+                    "year": 20242025,
+                    "country": "Denmark"
+                }
+            ],
+            "country": "Denmark"
+        },
+        {
+            "name": "Bulgaria First League",
+            "image": "https://cdn.footystats.org/img/competitions/bulgaria-first-league.png",
+            "season": [
+                {
+                    "id": 690,
+                    "year": 20172018,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 691,
+                    "year": 20162017,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 692,
+                    "year": 20152016,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 694,
+                    "year": 20142015,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 695,
+                    "year": 20132014,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 1547,
+                    "year": 20182019,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 2285,
+                    "year": 20192020,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 4574,
+                    "year": 20202021,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 6012,
+                    "year": 20212022,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 7483,
+                    "year": 20222023,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 9551,
+                    "year": 20232024,
+                    "country": "Bulgaria"
+                },
+                {
+                    "id": 12149,
+                    "year": 20242025,
+                    "country": "Bulgaria"
+                }
+            ],
+            "country": "Bulgaria"
+        },
+        {
+            "name": "Hungary NB I",
+            "image": "https://cdn.footystats.org/img/competitions/hungary-nb-i.png",
+            "season": [
+                {
+                    "id": 726,
+                    "year": 20162017,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 727,
+                    "year": 20152016,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 728,
+                    "year": 20132014,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 730,
+                    "year": 20172018,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 731,
+                    "year": 20142015,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 1566,
+                    "year": 20182019,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 2282,
+                    "year": 20192020,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 4534,
+                    "year": 20202021,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 5936,
+                    "year": 20212022,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 7967,
+                    "year": 20222023,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 10007,
+                    "year": 20232024,
+                    "country": "Hungary"
+                },
+                {
+                    "id": 12334,
+                    "year": 20242025,
+                    "country": "Hungary"
+                }
+            ],
+            "country": "Hungary"
+        },
+        {
+            "name": "Europe UEFA Europa League",
+            "image": "https://cdn.footystats.org/img/competitions/europe-uefa-europa-league.png",
+            "season": [
+                {
+                    "id": 964,
+                    "year": 20172018,
+                    "country": "Europe"
+                },
+                {
+                    "id": 1535,
+                    "year": 20182019,
+                    "country": "Europe"
+                },
+                {
+                    "id": 1700,
+                    "year": 20162017,
+                    "country": "Europe"
+                },
+                {
+                    "id": 1805,
+                    "year": 20142015,
+                    "country": "Europe"
+                },
+                {
+                    "id": 1806,
+                    "year": 20132014,
+                    "country": "Europe"
+                },
+                {
+                    "id": 2203,
+                    "year": 20192020,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4058,
+                    "year": 20092010,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4060,
+                    "year": 20122013,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4070,
+                    "year": 20112012,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4104,
+                    "year": 20102011,
+                    "country": "Europe"
+                },
+                {
+                    "id": 4693,
+                    "year": 20202021,
+                    "country": "Europe"
+                },
+                {
+                    "id": 6218,
+                    "year": 20212022,
+                    "country": "Europe"
+                },
+                {
+                    "id": 6731,
+                    "year": 20152016,
+                    "country": "Europe"
+                },
+                {
+                    "id": 7985,
+                    "year": 20222023,
+                    "country": "Europe"
+                },
+                {
+                    "id": 10210,
+                    "year": 20232024,
+                    "country": "Europe"
+                },
+                {
+                    "id": 12327,
+                    "year": 20242025,
+                    "country": "Europe"
+                }
+            ],
+            "country": "Europe"
+        },
+        {
+            "name": "England FA Cup",
+            "image": "https://cdn.footystats.org/img/competitions/england-fa-cup.png",
+            "season": [
+                {
+                    "id": 1033,
+                    "year": 20172018,
+                    "country": "England"
+                },
+                {
+                    "id": 1034,
+                    "year": 20162017,
+                    "country": "England"
+                },
+                {
+                    "id": 1035,
+                    "year": 20152016,
+                    "country": "England"
+                },
+                {
+                    "id": 1036,
+                    "year": 20142015,
+                    "country": "England"
+                },
+                {
+                    "id": 1037,
+                    "year": 20132014,
+                    "country": "England"
+                },
+                {
+                    "id": 1674,
+                    "year": 20182019,
+                    "country": "England"
+                },
+                {
+                    "id": 2414,
+                    "year": 20192020,
+                    "country": "England"
+                },
+                {
+                    "id": 3912,
+                    "year": 20122013,
+                    "country": "England"
+                },
+                {
+                    "id": 3917,
+                    "year": 20112012,
+                    "country": "England"
+                },
+                {
+                    "id": 3923,
+                    "year": 20102011,
+                    "country": "England"
+                },
+                {
+                    "id": 4803,
+                    "year": 20202021,
+                    "country": "England"
+                },
+                {
+                    "id": 6068,
+                    "year": 20212022,
+                    "country": "England"
+                },
+                {
+                    "id": 7836,
+                    "year": 20222023,
+                    "country": "England"
+                },
+                {
+                    "id": 9759,
+                    "year": 20232024,
+                    "country": "England"
+                },
+                {
+                    "id": 12542,
+                    "year": 20242025,
+                    "country": "England"
+                }
+            ],
+            "country": "England"
+        },
+        {
+            "name": "England League Cup",
+            "image": "https://cdn.footystats.org/img/competitions/england-league-cup.png",
+            "season": [
+                {
+                    "id": 1047,
+                    "year": 20172018,
+                    "country": "England"
+                },
+                {
+                    "id": 1048,
+                    "year": 20162017,
+                    "country": "England"
+                },
+                {
+                    "id": 1049,
+                    "year": 20152016,
+                    "country": "England"
+                },
+                {
+                    "id": 1050,
+                    "year": 20142015,
+                    "country": "England"
+                },
+                {
+                    "id": 1051,
+                    "year": 20132014,
+                    "country": "England"
+                },
+                {
+                    "id": 1675,
+                    "year": 20182019,
+                    "country": "England"
+                },
+                {
+                    "id": 2215,
+                    "year": 20192020,
+                    "country": "England"
+                },
+                {
+                    "id": 4076,
+                    "year": 20122013,
+                    "country": "England"
+                },
+                {
+                    "id": 4080,
+                    "year": 20112012,
+                    "country": "England"
+                },
+                {
+                    "id": 4091,
+                    "year": 20102011,
+                    "country": "England"
+                },
+                {
+                    "id": 4094,
+                    "year": 20092010,
+                    "country": "England"
+                },
+                {
+                    "id": 4780,
+                    "year": 20202021,
+                    "country": "England"
+                },
+                {
+                    "id": 7470,
+                    "year": 20212022,
+                    "country": "England"
+                },
+                {
+                    "id": 7579,
+                    "year": 20222023,
+                    "country": "England"
+                },
+                {
+                    "id": 9574,
+                    "year": 20232024,
+                    "country": "England"
+                },
+                {
+                    "id": 12473,
+                    "year": 20242025,
+                    "country": "England"
+                }
+            ],
+            "country": "England"
+        },
+        {
+            "name": "Romania Liga I",
+            "image": "https://cdn.footystats.org/img/competitions/romania-liga-i.png",
+            "season": [
+                {
+                    "id": 1086,
+                    "year": 20172018,
+                    "country": "Romania"
+                },
+                {
+                    "id": 1087,
+                    "year": 20162017,
+                    "country": "Romania"
+                },
+                {
+                    "id": 1088,
+                    "year": 20152016,
+                    "country": "Romania"
+                },
+                {
+                    "id": 1089,
+                    "year": 20142015,
+                    "country": "Romania"
+                },
+                {
+                    "id": 1090,
+                    "year": 20132014,
+                    "country": "Romania"
+                },
+                {
+                    "id": 1596,
+                    "year": 20182019,
+                    "country": "Romania"
+                },
+                {
+                    "id": 2312,
+                    "year": 20192020,
+                    "country": "Romania"
+                },
+                {
+                    "id": 4764,
+                    "year": 20202021,
+                    "country": "Romania"
+                },
+                {
+                    "id": 6037,
+                    "year": 20212022,
+                    "country": "Romania"
+                },
+                {
+                    "id": 7663,
+                    "year": 20222023,
+                    "country": "Romania"
+                },
+                {
+                    "id": 9622,
+                    "year": 20232024,
+                    "country": "Romania"
+                },
+                {
+                    "id": 12495,
+                    "year": 20242025,
+                    "country": "Romania"
+                }
+            ],
+            "country": "Romania"
+        },
+        {
+            "name": "Kazakhstan Kazakhstan Premier League",
+            "image": "https://cdn.footystats.org/img/competitions/kazakhstan-kazakhstan-premier-league.png",
+            "season": [
+                {
+                    "id": 1140,
+                    "year": 2017,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 1141,
+                    "year": 2016,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 1142,
+                    "year": 2015,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 1143,
+                    "year": 2014,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 1896,
+                    "year": 2019,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 1988,
+                    "year": 2018,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 3688,
+                    "year": 2020,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 5617,
+                    "year": 2021,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 7128,
+                    "year": 2022,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 8953,
+                    "year": 2023,
+                    "country": "Kazakhstan"
+                },
+                {
+                    "id": 11279,
+                    "year": 2024,
+                    "country": "Kazakhstan"
+                }
+            ],
+            "country": "Kazakhstan"
+        },
+        {
+            "name": "England Community Shield",
+            "image": "https://cdn.footystats.org/img/competitions/england-community-shield.png",
+            "season": [
+                {
+                    "id": 1626,
+                    "year": 20182019,
+                    "country": "England"
+                },
+                {
+                    "id": 2196,
+                    "year": 20192020,
+                    "country": "England"
+                },
+                {
+                    "id": 3870,
+                    "year": 20172018,
+                    "country": "England"
+                },
+                {
+                    "id": 3871,
+                    "year": 20162017,
+                    "country": "England"
+                },
+                {
+                    "id": 3872,
+                    "year": 20152016,
+                    "country": "England"
+                },
+                {
+                    "id": 3873,
+                    "year": 20142015,
+                    "country": "England"
+                },
+                {
+                    "id": 3874,
+                    "year": 20132014,
+                    "country": "England"
+                },
+                {
+                    "id": 3875,
+                    "year": 20122013,
+                    "country": "England"
+                },
+                {
+                    "id": 3876,
+                    "year": 20112012,
+                    "country": "England"
+                },
+                {
+                    "id": 3877,
+                    "year": 20102011,
+                    "country": "England"
+                },
+                {
+                    "id": 3878,
+                    "year": 20092010,
+                    "country": "England"
+                },
+                {
+                    "id": 4657,
+                    "year": 20202021,
+                    "country": "England"
+                },
+                {
+                    "id": 5962,
+                    "year": 20212022,
+                    "country": "England"
+                },
+                {
+                    "id": 7348,
+                    "year": 20222023,
+                    "country": "England"
+                },
+                {
+                    "id": 9541,
+                    "year": 20232024,
+                    "country": "England"
+                },
+                {
+                    "id": 12036,
+                    "year": 20242025,
+                    "country": "England"
+                }
+            ],
+            "country": "England"
+        },
+        {
+            "name": "Moldova Moldovan National Division",
+            "image": "https://cdn.footystats.org/img/competitions/moldova-moldovan-national-division.png",
+            "season": [
+                {
+                    "id": 2056,
+                    "year": 2018,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 2057,
+                    "year": 2017,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 2058,
+                    "year": 20162017,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 4437,
+                    "year": 2019,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 4775,
+                    "year": 20202021,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 5949,
+                    "year": 20212022,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 9163,
+                    "year": 20222023,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 9754,
+                    "year": 20232024,
+                    "country": "Moldova"
+                },
+                {
+                    "id": 12344,
+                    "year": 20242025,
+                    "country": "Moldova"
+                }
+            ],
+            "country": "Moldova"
+        },
+        {
+            "name": "Europe UEFA Europa Conference League",
+            "image": "https://cdn.footystats.org/img/competitions/europe-uefa-europa-conference-league.png",
+            "season": [
+                {
+                    "id": 7322,
+                    "year": 20212022,
+                    "country": "Europe"
+                },
+                {
+                    "id": 7480,
+                    "year": 20222023,
+                    "country": "Europe"
+                },
+                {
+                    "id": 9600,
+                    "year": 20232024,
+                    "country": "Europe"
+                },
+                {
+                    "id": 12278,
+                    "year": 20242025,
+                    "country": "Europe"
+                }
+            ],
+            "country": "Europe"
+        }
+    ],
+    "message": "Usage of the API is bound to our Terms of Use : https://footystats.org/api/documentations/terms-of-use-and-legal"
+}

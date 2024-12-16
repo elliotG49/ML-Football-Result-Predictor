@@ -1,0 +1,17 @@
+{
+    "team_id": 0.06686433629033754,
+    "opponent_id": 0.06725846871836677,
+    "team_ELO_before": 0.10306722758372985,
+    "opponent_ELO_before": 0.10324939628451109,
+    "h2h_btts": 0.06623383447068401,
+    "team_conceded_l5": 0.05643771950728471,
+    "team_conceded_l10": 0.06378731005995125,
+    "team_conceded_l20": 0.0731913129284341,
+    "opponent_conceded_l5": 0.056538283579202694,
+    "opponent_conceded_l10": 0.06383797389029891,
+    "opponent_conceded_l20": 0.07317613227321754,
+    "team_scoring_streak": 0.05265112182225555,
+    "opponent_scoring_streak": 0.05247064187920018,
+    "team_conceded_streak": 0.05076393273866179,
+    "opponent_conceded_streak": 0.050472307973864004
+}

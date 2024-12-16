@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/croatia_prva_hnl/Training-Results/Match-Result/v6-offish-move-rs42/v6-offish-move-rs42.joblib",
+    "accuracy": 0.625,
+    "precision_macro": 0.5373015873015873,
+    "recall_macro": 0.5499999999999999,
+    "f1_score_macro": 0.5333333333333333,
+    "classification_report": {
+        "0": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1-score": 0.25,
+            "support": 10.0
+        },
+        "1": {
+            "precision": 0.42857142857142855,
+            "recall": 0.6,
+            "f1-score": 0.5,
+            "support": 10.0
+        },
+        "2": {
+            "precision": 0.85,
+            "recall": 0.85,
+            "f1-score": 0.85,
+            "support": 20.0
+        },
+        "accuracy": 0.625,
+        "macro avg": {
+            "precision": 0.5373015873015873,
+            "recall": 0.5499999999999999,
+            "f1-score": 0.5333333333333333,
+            "support": 40.0
+        },
+        "weighted avg": {
+            "precision": 0.6154761904761905,
+            "recall": 0.625,
+            "f1-score": 0.6125,
+            "support": 40.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            2,
+            6,
+            2
+        ],
+        [
+            3,
+            6,
+            1
+        ],
+        [
+            1,
+            2,
+            17
+        ]
+    ]
+}

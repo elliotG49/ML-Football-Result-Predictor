@@ -1,0 +1,9 @@
+
+    Model Notes:
+    ------------
+    - This model uses two rows per match, which allows for the presence of a 'is_home' variable, aiming to increase the home_win accuracy percentage.
+    - This model uses the dataset specified in the config file.
+    - This model does not use betting odds.
+    - Random state used: 42
+    - League: finland_veikkausliiga
+    

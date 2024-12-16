@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/romania_liga_i/Training-Results/Match-Result/v6-game-keno-rs42/v6-game-keno-rs42.joblib",
+    "accuracy": 0.5232558139534884,
+    "precision_macro": 0.5040260908681962,
+    "recall_macro": 0.49554531490015363,
+    "f1_score_macro": 0.4749163879598662,
+    "classification_report": {
+        "0": {
+            "precision": 0.5333333333333333,
+            "recall": 0.25806451612903225,
+            "f1-score": 0.34782608695652173,
+            "support": 31.0
+        },
+        "1": {
+            "precision": 0.42105263157894735,
+            "recall": 0.4,
+            "f1-score": 0.41025641025641024,
+            "support": 20.0
+        },
+        "2": {
+            "precision": 0.5576923076923077,
+            "recall": 0.8285714285714286,
+            "f1-score": 0.6666666666666666,
+            "support": 35.0
+        },
+        "accuracy": 0.5232558139534884,
+        "macro avg": {
+            "precision": 0.5040260908681962,
+            "recall": 0.49554531490015363,
+            "f1-score": 0.4749163879598662,
+            "support": 86.0
+        },
+        "weighted avg": {
+            "precision": 0.517135078303989,
+            "recall": 0.5232558139534884,
+            "f1-score": 0.49210546783853143,
+            "support": 86.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            8,
+            8,
+            15
+        ],
+        [
+            4,
+            8,
+            8
+        ],
+        [
+            3,
+            3,
+            29
+        ]
+    ]
+}

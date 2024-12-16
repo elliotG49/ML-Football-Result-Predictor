@@ -1,0 +1,53 @@
+# Define the field names required for each dataset type
+FIELD_NAMES = {
+    'Match_Result': [
+        'match_id', 'competition_id', 'season', 'game_week', 'match_status',
+        'team_id', 'team_name', 'opponent_id', 'opponent_name', 'is_home',
+        'team_goal_count', 'opponent_goal_count', 'team_ELO_before', 
+        'opponent_ELO_before', 'result',
+        'team_h2h_win_percent', 'opponent_h2h_win_percent',
+        'odds_team_win', 'odds_draw', 'odds_opponent_win',
+        'winning_team',
+        'team_rest_days', 'opponent_rest_days', 'team_ppg', 'opponent_ppg', 
+        'opponent_ppg_mc', 'team_ppg_mc',
+        'pre_match_home_ppg',
+        'pre_match_away_ppg',
+        'pre_match_home_xg',
+        'pre_match_away_xg',
+        'team_home_advantage',
+        'opponent_home_advantage',
+        'team_away_advantage',
+        'opponent_away_advantage',
+        # Add any other fields specific to Match_Result
+    ],
+    'BTTS_FTS': [
+        # List of fields specific to BTTS_FTS
+        'match_id', 'competition_id', 'season', 'game_week', 'match_status',
+        'team_id', 'team_name', 'opponent_id', 'opponent_name', 'is_home',
+        'BTTS',
+        'h2h_btts',
+        'team_btts_l5',
+        'team_btts_l10',
+        'team_btts_l20',
+        'opponent_btts_l5',
+        'opponent_btts_l10',
+        'opponent_btts_l20',
+        'team_scoring_streak',
+        'opponent_scoring_streak',
+        # Add other fields as needed
+    ],
+    'Clean_Sheet': [
+        # List of fields specific to Clean_Sheet
+        'match_id', 'competition_id', 'season', 'game_week', 'match_status',
+        'team_id', 'team_name', 'opponent_id', 'opponent_name', 'is_home',
+        'team_conceded_l5', 
+        'team_conceded_l10',
+        'team_conceded_l20',
+        'opponent_conceded_l5',   
+        'opponent_conceded_l10',  
+        'opponent_conceded_l20',
+        'team_conceded_streak',
+        'opponent_conceded_streak',
+        # Add other fields as needed
+    ],
+}

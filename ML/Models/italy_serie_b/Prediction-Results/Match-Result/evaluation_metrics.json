@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/italy_serie_b/Training-Results/Match-Result/v6-taking-foul-rs42/v6-taking-foul-rs42.joblib",
+    "accuracy": 0.6285714285714286,
+    "precision_macro": 0.5732884399551067,
+    "recall_macro": 0.6,
+    "f1_score_macro": 0.5698074974670719,
+    "classification_report": {
+        "0": {
+            "precision": 0.4,
+            "recall": 0.2,
+            "f1-score": 0.26666666666666666,
+            "support": 20.0
+        },
+        "1": {
+            "precision": 0.5925925925925926,
+            "recall": 0.8,
+            "f1-score": 0.6808510638297872,
+            "support": 20.0
+        },
+        "2": {
+            "precision": 0.7272727272727273,
+            "recall": 0.8,
+            "f1-score": 0.7619047619047619,
+            "support": 30.0
+        },
+        "accuracy": 0.6285714285714286,
+        "macro avg": {
+            "precision": 0.5732884399551067,
+            "recall": 0.6,
+            "f1-score": 0.5698074974670719,
+            "support": 70.0
+        },
+        "weighted avg": {
+            "precision": 0.5952861952861953,
+            "recall": 0.6285714285714286,
+            "f1-score": 0.5972499638153134,
+            "support": 70.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            4,
+            9,
+            7
+        ],
+        [
+            2,
+            16,
+            2
+        ],
+        [
+            4,
+            2,
+            24
+        ]
+    ]
+}

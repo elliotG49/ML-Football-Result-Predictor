@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/portugal_liga_nos/Training-Results/Match-Result/v6-manque-orgy-rs42/v6-manque-orgy-rs42.joblib",
+    "accuracy": 0.6129032258064516,
+    "precision_macro": 0.5802063789868668,
+    "recall_macro": 0.5145743145743146,
+    "f1_score_macro": 0.5293085293085293,
+    "classification_report": {
+        "0": {
+            "precision": 0.3076923076923077,
+            "recall": 0.26666666666666666,
+            "f1-score": 0.2857142857142857,
+            "support": 15.0
+        },
+        "1": {
+            "precision": 0.75,
+            "recall": 0.42857142857142855,
+            "f1-score": 0.5454545454545454,
+            "support": 14.0
+        },
+        "2": {
+            "precision": 0.6829268292682927,
+            "recall": 0.8484848484848485,
+            "f1-score": 0.7567567567567568,
+            "support": 33.0
+        },
+        "accuracy": 0.6129032258064516,
+        "macro avg": {
+            "precision": 0.5802063789868668,
+            "recall": 0.5145743145743146,
+            "f1-score": 0.5293085293085293,
+            "support": 62.0
+        },
+        "weighted avg": {
+            "precision": 0.6072898384070691,
+            "recall": 0.6129032258064516,
+            "f1-score": 0.5950814660492081,
+            "support": 62.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            4,
+            1,
+            10
+        ],
+        [
+            5,
+            6,
+            3
+        ],
+        [
+            4,
+            1,
+            28
+        ]
+    ]
+}

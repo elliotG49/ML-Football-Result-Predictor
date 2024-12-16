@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/england_championship/Training-Results/Match-Result/v6-astylar-place-rs42/v6-astylar-place-rs42.joblib",
+    "accuracy": 0.6041666666666666,
+    "precision_macro": 0.5666555666555667,
+    "recall_macro": 0.5210988610003389,
+    "f1_score_macro": 0.4965352449223417,
+    "classification_report": {
+        "0": {
+            "precision": 0.3333333333333333,
+            "recall": 0.06896551724137931,
+            "f1-score": 0.11428571428571428,
+            "support": 29.0
+        },
+        "1": {
+            "precision": 0.7692307692307693,
+            "recall": 0.5555555555555556,
+            "f1-score": 0.6451612903225806,
+            "support": 18.0
+        },
+        "2": {
+            "precision": 0.5974025974025974,
+            "recall": 0.9387755102040817,
+            "f1-score": 0.7301587301587301,
+            "support": 49.0
+        },
+        "accuracy": 0.6041666666666666,
+        "macro avg": {
+            "precision": 0.5666555666555667,
+            "recall": 0.5210988610003389,
+            "f1-score": 0.4965352449223417,
+            "support": 96.0
+        },
+        "weighted avg": {
+            "precision": 0.5498494560994561,
+            "recall": 0.6041666666666666,
+            "f1-score": 0.5281767366444786,
+            "support": 96.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            2,
+            1,
+            26
+        ],
+        [
+            3,
+            10,
+            5
+        ],
+        [
+            1,
+            2,
+            46
+        ]
+    ]
+}

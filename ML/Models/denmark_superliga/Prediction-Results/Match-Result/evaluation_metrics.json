@@ -1,0 +1,57 @@
+{
+    "model_name": "/root/barnard/ML/Models/denmark_superliga/Training-Results/Match-Result/v6-biaural-lap-rs42/v6-biaural-lap-rs42.joblib",
+    "accuracy": 0.6166666666666667,
+    "precision_macro": 0.5755291005291006,
+    "recall_macro": 0.5802469135802469,
+    "f1_score_macro": 0.5611310234966149,
+    "classification_report": {
+        "0": {
+            "precision": 0.4444444444444444,
+            "recall": 0.2222222222222222,
+            "f1-score": 0.2962962962962963,
+            "support": 18.0
+        },
+        "1": {
+            "precision": 0.625,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.6451612903225806,
+            "support": 15.0
+        },
+        "2": {
+            "precision": 0.6571428571428571,
+            "recall": 0.8518518518518519,
+            "f1-score": 0.7419354838709677,
+            "support": 27.0
+        },
+        "accuracy": 0.6166666666666667,
+        "macro avg": {
+            "precision": 0.5755291005291006,
+            "recall": 0.5802469135802469,
+            "f1-score": 0.5611310234966149,
+            "support": 60.0
+        },
+        "weighted avg": {
+            "precision": 0.5852976190476191,
+            "recall": 0.6166666666666667,
+            "f1-score": 0.5840501792114696,
+            "support": 60.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            4,
+            5,
+            9
+        ],
+        [
+            2,
+            10,
+            3
+        ],
+        [
+            3,
+            1,
+            23
+        ]
+    ]
+}

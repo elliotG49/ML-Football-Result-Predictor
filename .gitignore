@@ -1,0 +1,13 @@
+# Ignore logs folder at any level
+logs/
+
+# Ignore Python virtual environment folders
+myenv/
+.venv/
+venv/
+
+# Ignore all .joblib files anywhere
+*.joblib
+
+# Ignore API.py files at any level of the project
+**/API.py

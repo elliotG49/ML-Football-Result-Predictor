@@ -1,0 +1,64 @@
+{
+    "model_name": "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-porose-rub-rs42/v6-porose-rub-rs42.joblib",
+    "accuracy": 0.6666666666666666,
+    "precision_macro": 0.6155394524959742,
+    "recall_macro": 0.6368933588761175,
+    "f1_score_macro": 0.5734265734265734,
+    "classification_report": {
+        "0": {
+            "precision": 0.5,
+            "recall": 0.1111111111111111,
+            "f1-score": 0.18181818181818182,
+            "support": 18.0
+        },
+        "1": {
+            "precision": 0.6521739130434783,
+            "recall": 0.9375,
+            "f1-score": 0.7692307692307693,
+            "support": 16.0
+        },
+        "2": {
+            "precision": 0.6944444444444444,
+            "recall": 0.8620689655172413,
+            "f1-score": 0.7692307692307693,
+            "support": 29.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+            "precision": 0.6155394524959742,
+            "recall": 0.6368933588761175,
+            "f1-score": 0.5734265734265734,
+            "support": 63.0
+        },
+        "weighted avg": {
+            "precision": 0.6281535158346753,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.6013986013986015,
+            "support": 63.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            2,
+            6,
+            10
+        ],
+        [
+            0,
+            15,
+            1
+        ],
+        [
+            2,
+            2,
+            25
+        ]
+    ],
+    "total_stake": 260,
+    "total_profit_loss": 114.0,
+    "roi": 43.84615384615385,
+    "threshold": 0.45,
+    "number_of_predictions": 52,
+    "correct_predictions": 38,
+    "threshold_accuracy": 0.7307692307692307
+}
