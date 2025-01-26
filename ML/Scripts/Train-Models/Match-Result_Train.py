@@ -300,7 +300,7 @@ def main(random_state, config):
         # Resample to balance the dataset
         home_wins_downsampled = home_wins.sample(n=min_samples, random_state=random_state)
         draws_upsampled = draws.sample(n=min_samples, replace=True, random_state=random_state)
-        away_wins_upsampled = away_wins.sample(n=min_samples, replace=True, random_state=random_state)
+        away_wins_downsampled = away_wins.sample(n=min_samples, replace=True, random_state=random_state)
         step = "Resample to balance classes"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
@@ -313,7 +313,7 @@ def main(random_state, config):
 
     try:
         # Combine the balanced classes
-        df_balanced = pd.concat([home_wins_downsampled, away_wins_upsampled, draws_upsampled])
+        df_balanced = pd.concat([home_wins_downsampled, away_wins_downsampled, draws_upsampled])
         step = "Combine balanced classes"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
