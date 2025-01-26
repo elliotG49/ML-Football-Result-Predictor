@@ -1,0 +1,24 @@
+type: 'radar'
+dataSource:
+  collection: 'teams'
+  # We can define or override any filter logic or fields here if needed
+  # But typically you might rely on the code to handle dynamic fields
+
+# Each "datapoint" corresponds to a field in the DB or a derived value
+datapoints:
+  - field: 'seasonConcededNum_overall'
+    label: 'Total Goals Conceded'
+  - field: 'seasonCS_overall'
+    label: 'Total Cleansheets'
+  - field: 'losePercentage_overall'
+    label: 'Loss Percentage'
+  - field: 'trailingAtHT_overall'
+    label: 'Total Trailing at Half-Time'
+  - field: 'foulsAVG_overall'
+    label: 'Average Number of Fouls'
+
+chartOptions:
+  title: 'Team Defensive Radar'
+  subtitle: 'Season Performance'
+  # Additional styling or overrides can go here if you want
+  # E.g., suggestedMax, color configs, etc.
