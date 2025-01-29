@@ -1,0 +1,165 @@
+2025-01-29 18:34:09,781 - INFO - Starting processing for league: albania_superliga
+2025-01-29 18:34:09,781 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py albania_superliga
+2025-01-29 18:34:22,188 - INFO - Successfully processed league: albania_superliga
+2025-01-29 18:34:22,188 - INFO - Starting processing for league: czech_republic_first_league
+2025-01-29 18:34:22,188 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py czech_republic_first_league
+2025-01-29 18:34:41,949 - INFO - Successfully processed league: czech_republic_first_league
+2025-01-29 18:34:41,949 - INFO - Starting processing for league: france_ligue_2
+2025-01-29 18:34:41,949 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py france_ligue_2
+2025-01-29 18:35:08,202 - INFO - Successfully processed league: france_ligue_2
+2025-01-29 18:35:08,202 - INFO - Starting processing for league: latvia_virsliga
+2025-01-29 18:35:08,202 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py latvia_virsliga
+2025-01-29 18:35:18,938 - INFO - Successfully processed league: latvia_virsliga
+2025-01-29 18:35:18,938 - INFO - Starting processing for league: romania_liga_i
+2025-01-29 18:35:18,938 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py romania_liga_i
+2025-01-29 18:35:40,209 - INFO - Successfully processed league: romania_liga_i
+2025-01-29 18:35:40,209 - INFO - Starting processing for league: turkey_super_lig
+2025-01-29 18:35:40,209 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py turkey_super_lig
+2025-01-29 18:35:59,962 - INFO - Successfully processed league: turkey_super_lig
+2025-01-29 18:35:59,962 - INFO - Starting processing for league: armenia_armenian_premier_league
+2025-01-29 18:35:59,962 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py armenia_armenian_premier_league
+2025-01-29 18:36:11,702 - INFO - Successfully processed league: armenia_armenian_premier_league
+2025-01-29 18:36:11,703 - INFO - Starting processing for league: denmark_superliga
+2025-01-29 18:36:11,703 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py denmark_superliga
+2025-01-29 18:36:27,441 - INFO - Successfully processed league: denmark_superliga
+2025-01-29 18:36:27,441 - INFO - Starting processing for league: england_premier_league
+2025-01-29 18:36:27,441 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py england_premier_league
+2025-01-29 18:36:54,220 - INFO - Successfully processed league: england_premier_league
+2025-01-29 18:36:54,220 - INFO - Starting processing for league: germany_2_bundesliga
+2025-01-29 18:36:54,220 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py germany_2_bundesliga
+2025-01-29 18:37:16,977 - INFO - Successfully processed league: germany_2_bundesliga
+2025-01-29 18:37:16,977 - INFO - Starting processing for league: moldova_moldovan_national_division
+2025-01-29 18:37:16,978 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py moldova_moldovan_national_division
+2025-01-29 18:37:23,696 - INFO - Successfully processed league: moldova_moldovan_national_division
+2025-01-29 18:37:23,696 - INFO - Starting processing for league: scotland_premiership
+2025-01-29 18:37:23,696 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py scotland_premiership
+2025-01-29 18:37:40,431 - INFO - Successfully processed league: scotland_premiership
+2025-01-29 18:37:40,431 - INFO - Starting processing for league: ukraine_ukrainian_premier_league
+2025-01-29 18:37:40,431 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py ukraine_ukrainian_premier_league
+2025-01-29 18:37:57,176 - INFO - Successfully processed league: ukraine_ukrainian_premier_league
+2025-01-29 18:37:57,176 - INFO - Starting processing for league: austria_bundesliga
+2025-01-29 18:37:57,176 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py austria_bundesliga
+2025-01-29 18:38:08,890 - INFO - Successfully processed league: austria_bundesliga
+2025-01-29 18:38:08,890 - INFO - Starting processing for league: estonia_meistriliiga
+2025-01-29 18:38:08,890 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py estonia_meistriliiga
+2025-01-29 18:38:20,604 - INFO - Successfully processed league: estonia_meistriliiga
+2025-01-29 18:38:20,604 - INFO - Starting processing for league: germany_bundesliga
+2025-01-29 18:38:20,604 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py germany_bundesliga
+2025-01-29 18:38:41,327 - INFO - Successfully processed league: germany_bundesliga
+2025-01-29 18:38:41,327 - INFO - Starting processing for league: netherlands_eerste_divisie
+2025-01-29 18:38:41,327 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py netherlands_eerste_divisie
+2025-01-29 18:39:06,061 - INFO - Successfully processed league: netherlands_eerste_divisie
+2025-01-29 18:39:06,061 - INFO - Starting processing for league: serbia_superliga
+2025-01-29 18:39:06,061 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py serbia_superliga
+2025-01-29 18:39:25,303 - INFO - Successfully processed league: serbia_superliga
+2025-01-29 18:39:25,303 - INFO - Starting processing for league: azerbaijan_premyer_liqasi
+2025-01-29 18:39:25,303 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py azerbaijan_premyer_liqasi
+2025-01-29 18:39:35,012 - INFO - Successfully processed league: azerbaijan_premyer_liqasi
+2025-01-29 18:39:35,012 - INFO - Starting processing for league: greece_super_league
+2025-01-29 18:39:35,012 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py greece_super_league
+2025-01-29 18:39:50,227 - INFO - Successfully processed league: greece_super_league
+2025-01-29 18:39:50,228 - INFO - Starting processing for league: netherlands_eredivisie
+2025-01-29 18:39:50,228 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py netherlands_eredivisie
+2025-01-29 18:40:09,456 - INFO - Successfully processed league: netherlands_eredivisie
+2025-01-29 18:40:09,456 - INFO - Starting processing for league: slovakia_super_lig
+2025-01-29 18:40:09,456 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py slovakia_super_lig
+2025-01-29 18:40:22,170 - INFO - Successfully processed league: slovakia_super_lig
+2025-01-29 18:40:22,170 - INFO - Starting processing for league: belgium_pro_league
+2025-01-29 18:40:22,170 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py belgium_pro_league
+2025-01-29 18:40:35,884 - INFO - Successfully processed league: belgium_pro_league
+2025-01-29 18:40:35,884 - INFO - Starting processing for league: england_championship
+2025-01-29 18:40:35,884 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py england_championship
+2025-01-29 18:41:06,617 - INFO - Successfully processed league: england_championship
+2025-01-29 18:41:06,617 - INFO - Starting processing for league: hungary_nb_i
+2025-01-29 18:41:06,617 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py hungary_nb_i
+2025-01-29 18:41:18,831 - INFO - Successfully processed league: hungary_nb_i
+2025-01-29 18:41:18,831 - INFO - Starting processing for league: norway_eliteserien
+2025-01-29 18:41:18,831 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py norway_eliteserien
+2025-01-29 18:41:39,556 - INFO - Successfully processed league: norway_eliteserien
+2025-01-29 18:41:39,556 - INFO - Starting processing for league: spain_la_liga
+2025-01-29 18:41:39,556 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py spain_la_liga
+2025-01-29 18:42:06,287 - INFO - Successfully processed league: spain_la_liga
+2025-01-29 18:42:06,287 - INFO - Starting processing for league: bulgaria_first_league
+2025-01-29 18:42:06,287 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py bulgaria_first_league
+2025-01-29 18:42:06,991 - ERROR - Errors for league bulgaria_first_league:
+Traceback (most recent call last):
+  File "/root/barnard/scripts/daily-automatic/update-players.py", line 208, in <module>
+    main()
+  File "/root/barnard/scripts/daily-automatic/update-players.py", line 195, in main
+    players = fetch_players(KEY, season_id)
+  File "/root/barnard/scripts/daily-automatic/update-players.py", line 139, in fetch_players
+    logging.info(f"Total players fetched for season_id {season_id}: {len(fetched_players)}")
+UnboundLocalError: local variable 'fetched_players' referenced before assignment
+
+2025-01-29 18:42:06,991 - ERROR - insert_players.py exited with return code 1 for league bulgaria_first_league
+2025-01-29 18:42:06,991 - INFO - Starting processing for league: italy_serie_a
+2025-01-29 18:42:06,991 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py italy_serie_a
+2025-01-29 18:42:35,737 - INFO - Successfully processed league: italy_serie_a
+2025-01-29 18:42:35,737 - INFO - Starting processing for league: poland_ekstraklasa
+2025-01-29 18:42:35,737 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py poland_ekstraklasa
+2025-01-29 18:42:55,961 - INFO - Successfully processed league: poland_ekstraklasa
+2025-01-29 18:42:55,962 - INFO - Starting processing for league: spain_segunda_division
+2025-01-29 18:42:55,962 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py spain_segunda_division
+2025-01-29 18:43:22,701 - INFO - Successfully processed league: spain_segunda_division
+2025-01-29 18:43:22,702 - INFO - Starting processing for league: england_efl_league_one
+2025-01-29 18:43:22,702 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py england_efl_league_one
+2025-01-29 18:43:57,451 - INFO - Successfully processed league: england_efl_league_one
+2025-01-29 18:43:57,451 - INFO - Starting processing for league: finland_veikkausliiga
+2025-01-29 18:43:57,451 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py finland_veikkausliiga
+2025-01-29 18:44:09,182 - INFO - Successfully processed league: finland_veikkausliiga
+2025-01-29 18:44:09,182 - INFO - Starting processing for league: italy_serie_b
+2025-01-29 18:44:09,182 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py italy_serie_b
+2025-01-29 18:44:36,438 - INFO - Successfully processed league: italy_serie_b
+2025-01-29 18:44:36,438 - INFO - Starting processing for league: portugal_liga_nos
+2025-01-29 18:44:36,438 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py portugal_liga_nos
+2025-01-29 18:44:57,159 - INFO - Successfully processed league: portugal_liga_nos
+2025-01-29 18:44:57,159 - INFO - Starting processing for league: sweden_allsvenskan
+2025-01-29 18:44:57,159 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py sweden_allsvenskan
+2025-01-29 18:45:24,892 - INFO - Successfully processed league: sweden_allsvenskan
+2025-01-29 18:45:24,892 - INFO - Starting processing for league: croatia_prva_hnl
+2025-01-29 18:45:24,892 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py croatia_prva_hnl
+2025-01-29 18:45:37,106 - INFO - Successfully processed league: croatia_prva_hnl
+2025-01-29 18:45:37,106 - INFO - Starting processing for league: england_efl_league_two
+2025-01-29 18:45:37,106 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py england_efl_league_two
+2025-01-29 18:46:02,338 - INFO - Successfully processed league: england_efl_league_two
+2025-01-29 18:46:02,339 - INFO - Starting processing for league: france_ligue_1
+2025-01-29 18:46:02,339 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py france_ligue_1
+2025-01-29 18:46:27,065 - INFO - Successfully processed league: france_ligue_1
+2025-01-29 18:46:27,065 - INFO - Starting processing for league: kazakhstan_kazakhstan_premier_league
+2025-01-29 18:46:27,065 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py kazakhstan_kazakhstan_premier_league
+2025-01-29 18:46:39,811 - INFO - Successfully processed league: kazakhstan_kazakhstan_premier_league
+2025-01-29 18:46:39,811 - INFO - Starting processing for league: portugal_liga_pro
+2025-01-29 18:46:39,811 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py portugal_liga_pro
+2025-01-29 18:47:01,536 - INFO - Successfully processed league: portugal_liga_pro
+2025-01-29 18:47:01,537 - INFO - Starting processing for league: switzerland_super_league
+2025-01-29 18:47:01,537 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py switzerland_super_league
+2025-01-29 18:47:15,282 - INFO - Successfully processed league: switzerland_super_league
+2025-01-29 18:47:15,282 - INFO - Starting processing for league: england_fa_cup
+2025-01-29 18:47:15,282 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py england_fa_cup
+2025-01-29 18:47:16,060 - ERROR - Errors for league england_fa_cup:
+Traceback (most recent call last):
+  File "/root/barnard/scripts/daily-automatic/update-players.py", line 208, in <module>
+    main()
+  File "/root/barnard/scripts/daily-automatic/update-players.py", line 195, in main
+    players = fetch_players(KEY, season_id)
+  File "/root/barnard/scripts/daily-automatic/update-players.py", line 139, in fetch_players
+    logging.info(f"Total players fetched for season_id {season_id}: {len(fetched_players)}")
+UnboundLocalError: local variable 'fetched_players' referenced before assignment
+
+2025-01-29 18:47:16,060 - ERROR - insert_players.py exited with return code 1 for league england_fa_cup
+2025-01-29 18:47:16,060 - INFO - Starting processing for league: england_league_cup
+2025-01-29 18:47:16,060 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py england_league_cup
+2025-01-29 18:48:33,879 - INFO - Successfully processed league: england_league_cup
+2025-01-29 18:48:33,879 - INFO - Starting processing for league: england_community_shield
+2025-01-29 18:48:33,879 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py england_community_shield
+2025-01-29 18:48:34,144 - ERROR - insert_players.py exited with return code 1 for league england_community_shield
+2025-01-29 18:48:34,144 - INFO - Starting processing for league: europe_uefa_europa_league
+2025-01-29 18:48:34,144 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py europe_uefa_europa_league
+2025-01-29 18:51:29,101 - INFO - Successfully processed league: europe_uefa_europa_league
+2025-01-29 18:51:29,101 - INFO - Starting processing for league: europe_uefa_champions_league
+2025-01-29 18:51:29,101 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py europe_uefa_champions_league
+2025-01-29 18:52:46,935 - INFO - Successfully processed league: europe_uefa_champions_league
+2025-01-29 18:52:46,935 - INFO - Starting processing for league: europe_uefa_europa_conference_league
+2025-01-29 18:52:46,935 - INFO - Executing command: python /root/barnard/scripts/daily-automatic/update-players.py europe_uefa_europa_conference_league
+2025-01-29 18:53:46,264 - INFO - Successfully processed league: europe_uefa_europa_conference_league
+2025-01-29 18:53:46,264 - INFO - All leagues have been processed.
