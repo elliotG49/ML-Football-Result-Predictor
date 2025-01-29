@@ -13,7 +13,7 @@ prediction_metrics_pathway:
   BTTS_FTS: /root/barnard/ML/Models/england_premier_league/Prediction-Results/BTTS-FTS
   Clean_Sheet: /root/barnard/ML/Models/england_premier_league/Prediction-Results/Clean-Sheet
 prediction_model_pathway:
-  Match_Result:   "/root/barnard/ML/Models/england_premier_league/Training-Results/Match-Result/v6-spongy-melee-rs42/v6-spongy-melee-rs42.joblib"
+  Match_Result:   "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-pushful-halma-rs22/v6-pushful-halma-rs22.joblib"
   BTTS_FTS: ''
   Clean_Sheet: ''
 training_dataset_pathway:

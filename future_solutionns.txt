@@ -1,0 +1,8 @@
+This file outlines possible future solutions for the continuance of PGA without its primary goal of ML for predicting the outcome of football games.
+
+1. The Social Media side - showing relevant analytics [could be interlinked with all other values in the file]
+2. Building player profiles - showing similiar players in different leagues - this could be useful for transfers
+    - Where players lack - what they can improve
+    - where do teams lac, - what players could improve this
+3. Finding unknmown players from outside leagues
+4. FPL Side possible best picks

@@ -2,7 +2,9 @@ import pandas as pd
 from sklearn.model_selection import StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
-from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score, classification_report
+from sklearn.metrics import (confusion_matrix, accuracy_score, 
+                             precision_score, recall_score, f1_score, 
+                             classification_report)
 import joblib  # Added for serialization
 import json
 import matplotlib.pyplot as plt
@@ -19,6 +21,13 @@ import argparse
 # Initialize colorama
 init(autoreset=True)
 
+# =====================
+# Toggle Balancing
+# =====================
+# Set to True to apply the class balancing strategy.
+# Set to False to keep the original distribution of classes.
+BALANCE_CLASSES = False
+
 # ===========================================
 # Function Definitions
 # ===========================================
@@ -26,7 +35,7 @@ init(autoreset=True)
 def download_nltk_dependencies():
     """Downloads necessary NLTK data files."""
     nltk_packages = ['wordnet', 'omw-1.4']
-    for package in nltk_packages:
+    for package in nltk_packages:     
         try:
             nltk.download(package, quiet=True)
             step = f"Download {package}"
@@ -180,7 +189,7 @@ def main(random_state, config):
         print(f"{Fore.RED}Error: No nouns found. Exiting.{Style.RESET_ALL}")
         return
 
-    # Generate a unique model name 
+    # Generate a unique model name
     model_base_name = generate_model_name(prefix='v6', adjectives=adjectives, nouns=nouns, random_state=random_state)
 
     # Define paths
@@ -210,11 +219,10 @@ def main(random_state, config):
     model_notes = f"""
     Model Notes:
     ------------
-    - This model uses two rows per match, which allows for the presence of a 'is_home' variable, aiming to increase the home_win accuracy percentage.
-    - This model uses the dataset specified in the config file.
-    - This model does not use betting odds.
-    - Random state used: {random_state}
-    - League: {league_name}
+    - Uses min-sample-leaf = 1
+    - Using new dataset with 1 row per match
+    - {'Balancing classes' if BALANCE_CLASSES else 'Keeping original class distribution'}
+    - Added Team_ID's and xG within feature set
     """
 
     # ===========================================
@@ -222,9 +230,7 @@ def main(random_state, config):
     # ===========================================
 
     try:
-        # Define the path for notes.txt
         notes_filename = os.path.join(metrics_dir, "notes.txt")
-        # Save the model notes to notes.txt
         with open(notes_filename, 'w') as notes_file:
             notes_file.write(model_notes)
         step = f"Save Notes at '{notes_filename}'"
@@ -268,114 +274,94 @@ def main(random_state, config):
         print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
         return
 
-    try:
-        # Separate each class
-        draws = df[df["winning_team"] == 0]
-        home_wins = df[df["winning_team"] == 2]  # Assuming 2 represents home wins
-        away_wins = df[df["winning_team"] == 1]  # Assuming 1 represents away wins
-        step = "Separate classes"
+    # ===========================================
+    # Either Balance Classes or Keep Original
+    # ===========================================
+    if BALANCE_CLASSES:
+        try:
+            # Separate each class
+            draws = df[df["winning_team"] == 0]
+            home_wins = df[df["winning_team"] == 2]  # 2 = Home Win
+            away_wins = df[df["winning_team"] == 1]  # 1 = Away Win
+            step = "Separate classes"
+            status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
+            print(f"{step:<50} {status}")
+        except Exception as e:
+            step = "Separate classes"
+            status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
+            print(f"{step:<50} {status}")
+            print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
+            return
+
+        try:
+            # Ensure there are enough samples
+            min_samples = min(len(draws), len(home_wins), len(away_wins))
+            step = f"Min samples for balancing: {min_samples}"
+            status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
+            print(f"{step:<50} {status}")
+        except Exception as e:
+            step = "Determine min samples for balancing"
+            status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
+            print(f"{step:<50} {status}")
+            print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
+            return
+
+        try:
+            # Resample to balance the dataset
+            home_wins_downsampled = home_wins.sample(n=min_samples, random_state=random_state)
+            draws_upsampled = draws.sample(n=min_samples, replace=True, random_state=random_state)
+            away_wins_downsampled = away_wins.sample(n=min_samples, replace=True, random_state=random_state)
+
+            df_balanced = pd.concat([home_wins_downsampled, away_wins_downsampled, draws_upsampled])
+            df_balanced = df_balanced.sample(frac=1, random_state=random_state).reset_index(drop=True)
+
+            step = f"Classes balanced (draws={len(draws_upsampled)}, home_wins={len(home_wins_downsampled)}, away_wins={len(away_wins_downsampled)})"
+            status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
+            print(f"{step:<50} {status}")
+
+        except Exception as e:
+            step = "Resample to balance classes"
+            status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
+            print(f"{step:<50} {status}")
+            print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
+            return
+
+    else:
+        # Use original distribution
+        step = f"Keep original class distribution"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
-    except Exception as e:
-        step = "Separate classes"
-        status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-        print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
-        return
+        df_balanced = df.copy()
 
+    # ===========================================
+    # Define Features and Target
+    # ===========================================
     try:
-        # Ensure there are enough samples for resampling
-        min_samples = min(len(draws), len(home_wins), len(away_wins))
-        step = f"Min samples for balancing: {min_samples}"
-        status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-    except Exception as e:
-        step = "Determine min samples for balancing"
-        status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-        print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
-        return
-
-    try:
-        # Resample to balance the dataset
-        home_wins_downsampled = home_wins.sample(n=min_samples, random_state=random_state)
-        draws_upsampled = draws.sample(n=min_samples, replace=True, random_state=random_state)
-        away_wins_downsampled = away_wins.sample(n=min_samples, replace=True, random_state=random_state)
-        step = "Resample to balance classes"
-        status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-    except Exception as e:
-        step = "Resample to balance classes"
-        status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-        print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
-        return
-
-    try:
-        # Combine the balanced classes
-        df_balanced = pd.concat([home_wins_downsampled, away_wins_downsampled, draws_upsampled])
-        step = "Combine balanced classes"
-        status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-    except Exception as e:
-        step = "Combine balanced classes"
-        status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-        print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
-        return
-
-    try:
-        # Shuffle the dataset
-        df_balanced = df_balanced.sample(frac=1, random_state=random_state).reset_index(drop=True)
-        step = "Shuffle balanced dataset"
-        status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-    except Exception as e:
-        step = "Shuffle balanced dataset"
-        status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-        print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
-        return
-
-    try:
-        # Define the features and the target variable
         features = [
-    'team_id', 'opponent_id',
-    'team_ELO_before', 'opponent_ELO_before',
-    'odds_team_win',
-    'odds_draw',
-    'odds_opponent_win',
-    'opponent_rest_days', 'team_rest_days',
-    'team_h2h_win_percent', 'opponent_h2h_win_percent',
-    #'team_ppg', 'opponent_ppg',
-    #'team_ppg_mc', 'opponent_ppg_mc',
-    'pre_match_home_ppg', 'pre_match_away_ppg',
-    #'pre_match_home_xg', 'pre_match_away_xg',
-    'team_home_advantage', 'opponent_home_advantage',
-    #'team_away_advantage', 'opponent_away_advantage'
-]
-        
+            'team_id', 'opponent_id',
+            'team_ELO_before', 'opponent_ELO_before',
+            'odds_team_win', 'odds_draw', 'odds_opponent_win',
+            'opponent_rest_days', 'team_rest_days',
+            'team_h2h_win_percent', 'opponent_h2h_win_percent',
+            'pre_match_home_ppg', 
+            'pre_match_away_ppg',
+            'opponent_ppg_mc', 'team_ppg_mc', 
+            'team_home_advantage', 
+            'opponent_away_advantage', 
+            'pre_match_home_xg',
+            'pre_match_away_xg'
+        ]
 
         X = df_balanced[features]
         y = df_balanced["winning_team"]
-        step = "Define features and target"
-        status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-    except Exception as e:
-        step = "Define features and target"
-        status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
-        print(f"{step:<50} {status}")
-        print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
-        return
 
-    try:
-        # Store match details (homeID, awayID, matchID) alongside X
         match_details = df_balanced[["team_id", "opponent_id", "match_id"]]
-        step = "Store match details"
+
+        step = "Define features and target"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
     except Exception as e:
-        step = "Store match details"
+        step = "Define features and target"
         status = f"{Fore.RED}✖ Failed{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
         print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
@@ -384,9 +370,16 @@ def main(random_state, config):
     # ===========================================
     # Initialize the Random Forest Classifier
     # ===========================================
+    MIN_SAMPLE_LEAF = 1
+    N_ESTIMATORS = 165
 
     try:
-        model = RandomForestClassifier(n_estimators=165, random_state=random_state, min_samples_leaf=1, n_jobs=-1)
+        model = RandomForestClassifier(
+            n_estimators=N_ESTIMATORS,
+            random_state=random_state,
+            min_samples_leaf=MIN_SAMPLE_LEAF,
+            n_jobs=-1
+        )
         step = "Init Random Forest Classifier"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
@@ -400,7 +393,6 @@ def main(random_state, config):
     # ===========================================
     # Perform Stratified K-Fold Cross-Validation
     # ===========================================
-
     print(f"{Fore.CYAN}--- Stratified K-Fold Cross-Validation ---{Style.RESET_ALL}")
 
     skf = StratifiedKFold(n_splits=10, shuffle=True, random_state=random_state)
@@ -418,8 +410,7 @@ def main(random_state, config):
     away_ids = []
     match_ids = []
 
-    # Define class labels and names for clarity
-    class_labels = [0, 1, 2]  # 0: Draw, 1: Away Win, 2: Home Win
+    class_labels = [0, 1, 2]  # 0: Draw, 1: Away, 2: Home
     class_names = ['Draw', 'Away Win', 'Home Win']
 
     for fold, (train_index, test_index) in enumerate(skf.split(X, y), 1):
@@ -452,7 +443,7 @@ def main(random_state, config):
             # Store the predictions, confidences, and actual values
             predictions.extend(preds)
             actuals.extend(y_test)
-            confidences.extend(np.max(probas, axis=1))  # Max probability as confidence score
+            confidences.extend(np.max(probas, axis=1))  # Max probability as confidence
 
             # Store match details
             home_ids.extend(match_details.iloc[test_index]["team_id"])
@@ -462,21 +453,18 @@ def main(random_state, config):
             # Capture feature importances
             feature_importances += model.feature_importances_
 
-            # Compute Confusion Matrix and Classification Report for this fold
+            # Confusion Matrix and Classification Report
             cm = confusion_matrix(y_test, preds, labels=class_labels)
-            report = classification_report(y_test, preds, labels=class_labels, target_names=class_names, zero_division=0)
+            report = classification_report(y_test, preds, labels=class_labels, 
+                                           target_names=class_names, zero_division=0)
 
-            # Convert Confusion Matrix to DataFrame for better readability
             cm_df = pd.DataFrame(cm, index=class_names, columns=class_names)
-
-            # Print Classification Report and Confusion Matrix
             print(f"{Fore.MAGENTA}Classification Report for Fold {fold}:{Style.RESET_ALL}")
             print(report)
             print(f"{Fore.MAGENTA}Confusion Matrix for Fold {fold}:{Style.RESET_ALL}")
             print(cm_df)
-            print("\n" + "-"*60 + "\n")  # Separator for clarity
+            print("\n" + "-"*60 + "\n")
 
-            # Update status to successful with metrics
             status = (f"{Fore.GREEN}✔ Successful "
                       f"(Acc: {acc:.2f}, Prec: {precision:.2f}, Rec: {recall:.2f}, F1: {f1:.2f}){Style.RESET_ALL}")
             print(f"{step:<50} {status}")
@@ -485,7 +473,7 @@ def main(random_state, config):
             print(f"{step:<50} {status}")
             print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
 
-    # Calculate the average feature importance
+    # Average feature importance
     feature_importances /= skf.get_n_splits()
     step = "Calculate feature importances"
     status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
@@ -494,11 +482,9 @@ def main(random_state, config):
     # ===========================================
     # Compile Results
     # ===========================================
-
     print(f"{Fore.CYAN}--- Compile Results ---{Style.RESET_ALL}")
 
     try:
-        # Combine predictions, actuals, confidences, and match details into a DataFrame
         results_df = pd.DataFrame({
             'Actual': actuals,
             'Predicted': predictions,
@@ -518,7 +504,6 @@ def main(random_state, config):
         return
 
     try:
-        # Calculate overall accuracy
         overall_accuracy = (results_df['Actual'] == results_df['Predicted']).mean()
         step = "Overall Accuracy"
         status = f"{Fore.GREEN}{overall_accuracy:.2f}{Style.RESET_ALL}"
@@ -531,8 +516,8 @@ def main(random_state, config):
         return
 
     try:
-        # Calculate overall precision, recall, and F1-score
-        report = classification_report(results_df['Actual'], results_df['Predicted'], output_dict=True, zero_division=0)
+        report = classification_report(results_df['Actual'], results_df['Predicted'], 
+                                       output_dict=True, zero_division=0)
         overall_precision = report['macro avg']['precision']
         overall_recall = report['macro avg']['recall']
         overall_f1 = report['macro avg']['f1-score']
@@ -548,7 +533,6 @@ def main(random_state, config):
         return
 
     try:
-        # Confusion matrix for all predictions
         cm = confusion_matrix(results_df['Actual'], results_df['Predicted'], labels=class_labels)
         step = "Calculate Confusion Matrix"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
@@ -561,7 +545,6 @@ def main(random_state, config):
         return
 
     try:
-        # Filter for predictions with confidence of 60% or higher
         high_confidence_threshold = 0.51
         high_confidence_df = results_df[results_df['Confidence'] >= high_confidence_threshold]
         step = f"Filter High-Confidence (>= {int(high_confidence_threshold*100)}%)"
@@ -575,10 +558,11 @@ def main(random_state, config):
         return
 
     try:
-        # Calculate the accuracy for these high-confidence predictions
         if len(high_confidence_df) > 0:
             high_confidence_accuracy = (high_confidence_df['Actual'] == high_confidence_df['Predicted']).mean()
-            high_conf_report = classification_report(high_confidence_df['Actual'], high_confidence_df['Predicted'], output_dict=True, zero_division=0)
+            high_conf_report = classification_report(high_confidence_df['Actual'], 
+                                                     high_confidence_df['Predicted'], 
+                                                     output_dict=True, zero_division=0)
             high_conf_precision = high_conf_report['macro avg']['precision']
             high_conf_recall = high_conf_report['macro avg']['recall']
             high_conf_f1 = high_conf_report['macro avg']['f1-score']
@@ -604,9 +588,7 @@ def main(random_state, config):
     # ===========================================
     # Print Summary Statistics
     # ===========================================
-
     try:
-        # Print the cross-validation results
         mean_cv_accuracy = np.mean(cv_accuracies)
         std_cv_accuracy = np.std(cv_accuracies)
         mean_cv_precision = np.mean(cv_precisions)
@@ -652,13 +634,14 @@ def main(random_state, config):
     # ===========================================
     # Retrain the Model on the Entire Dataset
     # ===========================================
-
     print(f"{Fore.CYAN}--- Retrain Model on Entire Dataset ---{Style.RESET_ALL}")
 
     try:
-        # Initialize a new Random Forest Classifier with the same parameters
-        final_model = RandomForestClassifier(n_estimators=165, random_state=random_state, min_samples_leaf=1)
-        # Train the model on the entire dataset
+        final_model = RandomForestClassifier(
+            n_estimators=N_ESTIMATORS,
+            random_state=random_state,
+            min_samples_leaf=MIN_SAMPLE_LEAF
+        )
         final_model.fit(X, y)
         step = "Retrain model on entire dataset"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
@@ -673,10 +656,7 @@ def main(random_state, config):
     # ===========================================
     # Save the Trained Model and Features
     # ===========================================
-
     try:
-        # Ensure the metrics_dir exists (already ensured earlier)
-        # Save the trained model using joblib
         joblib.dump(final_model, model_filename)
         step = f"Save trained model to '{model_filename}'"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
@@ -689,10 +669,9 @@ def main(random_state, config):
         return
 
     try:
-        # Save feature importances to a JSON file
         feature_importances_dict = dict(zip(features, feature_importances))
-        with open(os.path.join(metrics_dir, "feature_importances.json"), 'w') as f:
-            json.dump(feature_importances_dict, f, indent=4)
+        with open(os.path.join(metrics_dir, "feature_importances.json"), 'w') as f_imp:
+            json.dump(feature_importances_dict, f_imp, indent=4)
         step = "Save feature importances"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
@@ -705,13 +684,12 @@ def main(random_state, config):
     # ===========================================
     # Generate and Save Plots
     # ===========================================
-
     print(f"{Fore.CYAN}--- Generate and Save Plots ---{Style.RESET_ALL}")
 
     try:
-        # Plot and save confusion matrix
         plt.figure(figsize=(8, 6))
-        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=class_names, yticklabels=class_names)
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+                    xticklabels=class_names, yticklabels=class_names)
         plt.xlabel('Predicted')
         plt.ylabel('Actual')
         plt.title('Confusion Matrix')
@@ -724,7 +702,6 @@ def main(random_state, config):
         print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
 
     try:
-        # Plot and save feature importances
         plt.figure(figsize=(10, 8))
         sorted_features = sorted(feature_importances_dict.items(), key=lambda x: x[1], reverse=True)
         features_sorted, importances_sorted = zip(*sorted_features)
@@ -743,13 +720,8 @@ def main(random_state, config):
     # ===========================================
     # Save Model Metrics
     # ===========================================
-
     try:
-        # Calculate the overall confusion matrix from all predictions
-        overall_cm = confusion_matrix(results_df['Actual'], results_df['Predicted'], labels=class_labels)
-        # Convert confusion matrix to a JSON-serializable format (list of lists)
-        overall_cm_list = overall_cm.tolist()
-
+        overall_cm = cm.tolist()
         step = "Calculate Overall Confusion Matrix"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
@@ -760,29 +732,28 @@ def main(random_state, config):
         print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
         return
 
-    # ===========================================
-    # Save Model Metrics
-    # ===========================================
-
     try:
         metrics = {
+            "balance_classes": BALANCE_CLASSES,
+            "n_estimators": N_ESTIMATORS,
+            "min_sample_leaf": MIN_SAMPLE_LEAF,
             "random_state": random_state,
             "overall_accuracy": overall_accuracy,
             "overall_precision": overall_precision,
             "overall_recall": overall_recall,
             "overall_f1": overall_f1,
             "cv_accuracies": cv_accuracies,
-            "mean_cv_accuracy": mean_cv_accuracy,
-            "std_cv_accuracy": std_cv_accuracy,
+            "mean_cv_accuracy": float(np.mean(cv_accuracies)),
+            "std_cv_accuracy": float(np.std(cv_accuracies)),
             "cv_precisions": cv_precisions,
-            "mean_cv_precision": mean_cv_precision,
-            "std_cv_precision": std_cv_precision,
+            "mean_cv_precision": float(np.mean(cv_precisions)),
+            "std_cv_precision": float(np.std(cv_precisions)),
             "cv_recalls": cv_recalls,
-            "mean_cv_recall": mean_cv_recall,
-            "std_cv_recall": std_cv_recall,
+            "mean_cv_recall": float(np.mean(cv_recalls)),
+            "std_cv_recall": float(np.std(cv_recalls)),
             "cv_f1s": cv_f1s,
-            "mean_cv_f1": mean_cv_f1,
-            "std_cv_f1": std_cv_f1,
+            "mean_cv_f1": float(np.mean(cv_f1s)),
+            "std_cv_f1": float(np.std(cv_f1s)),
             "feature_importances": feature_importances_dict,
             "high_confidence_threshold": high_confidence_threshold,
             "high_confidence_accuracy": high_confidence_accuracy,
@@ -790,11 +761,11 @@ def main(random_state, config):
             "high_confidence_recall": high_conf_recall,
             "high_confidence_f1": high_conf_f1,
             "number_high_confidence_predictions": len(high_confidence_df),
-            "overall_confusion_matrix": overall_cm_list  # Add the overall confusion matrix here
+            "overall_confusion_matrix": overall_cm
         }
 
-        with open(metrics_filename, 'w') as f:
-            json.dump(metrics, f, indent=4)
+        with open(metrics_filename, 'w') as f_json:
+            json.dump(metrics, f_json, indent=4)
         step = f"Save Metrics at '{metrics_filename}'"
         status = f"{Fore.GREEN}✔ Successful{Style.RESET_ALL}"
         print(f"{step:<50} {status}")
@@ -806,7 +777,6 @@ def main(random_state, config):
 
     print(f"{Fore.CYAN}--- Training Script Completed ---{Style.RESET_ALL}")
 
-    # Return metrics for aggregation
     return metrics
 
 if __name__ == "__main__":
@@ -833,23 +803,16 @@ if __name__ == "__main__":
         print(f"{Fore.RED}Error: {e}{Style.RESET_ALL}")
         exit(1)
 
-    random_states = [42]  # List of different random states
+    random_states = [22]  # If you want multiple experiments, add more random states here
     overall_metrics = []
-    training_dataset_pathway = config['training_dataset_pathway']
-    model_metrics_pathway = config['training_model_pathways']
-    model_metrics = model_metrics_pathway['Match_Result']
-    training_dataset = training_dataset_pathway['Match_Result']
 
     for rs in random_states:
         print(f"\n{Fore.BLUE}Running experiment with random_state = {rs}{Style.RESET_ALL}\n")
         metrics = main(random_state=rs, config=config)
         overall_metrics.append(metrics)
 
-    # Aggregate and display results
+    # Optionally aggregate or analyze overall_metrics here
     if overall_metrics:
-        metrics_df = pd.DataFrame(overall_metrics)
+        df_agg = pd.DataFrame(overall_metrics)
         print(f"\n{Fore.CYAN}--- Aggregated Results ---{Style.RESET_ALL}")
-        print(metrics_df.describe())
-
-        # Save aggregated metrics
-        
+        print(df_agg.describe())

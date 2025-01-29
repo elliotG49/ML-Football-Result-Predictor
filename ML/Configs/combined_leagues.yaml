@@ -1,6 +1,6 @@
 league: combined_leagues
 predictions_pathways:
-  Match_Result: /root/barnard/ML/Models/france_ligue_1/Datasets/MR_2425_Prediction_Dataset.csv
+  Match_Result: /root/barnard/ML/Models/england_premier_league/Datasets/MR_2425_Prediction_Dataset.csv
   BTTS_FTS: /root/barnard/ML/Models/combined_leagues/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
   Clean_Sheet: /root/barnard/ML/Models/combined_leagues/Datasets/CS_2425_Prediction_Dataset.csv
 training_model_pathways:
@@ -12,11 +12,11 @@ prediction_metrics_pathway:
   BTTS_FTS: /root/barnard/ML/Models/combined_leagues/Prediction-Results/BTTS-FTS
   Clean_Sheet: /root/barnard/ML/Models/combined_leagues/Prediction-Results/Clean-Sheet
 prediction_model_pathway:
-  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-porose-rub-rs42/v6-porose-rub-rs42.joblib"
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-livid-causa-rs22/v6-livid-causa-rs22.joblib"
   BTTS_FTS: ''
   Clean_Sheet: ''
 training_dataset_pathway:
-  Match_Result: /root/barnard/ML/Models/combined_leagues/Datasets/MR_Dataset_2.csv
+  Match_Result: /root/barnard/ML/Models/combined_leagues/Datasets/MR_Dataset_Clean_Home.csv
   BTTS_FTS: /root/barnard/ML/Models/combined_leagues/Datasets/BTTS_FTS_Dataset.csv
   Clean_Sheet: /root/barnard/ML/Models/combined_leagues/Datasets/Clean_Sheet_Dataset.csv
 country: ALL

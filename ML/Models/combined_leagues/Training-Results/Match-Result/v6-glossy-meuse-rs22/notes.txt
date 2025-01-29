@@ -1,0 +1,8 @@
+
+    Model Notes:
+    ------------
+    - Changing 'Min Sample Leaf' to 3 from 1 to reduce overfitting.
+    - Using new dataset with 1 row per match
+    - Keeping original class distribution
+    - Added Team_ID's and xG within feature set
+    

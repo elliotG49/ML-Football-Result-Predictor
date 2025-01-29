@@ -28,17 +28,17 @@ MATCHES_COLLECTION_NAME = 'matches'      # Matches collection name
 features = [
     'team_id', 'opponent_id',
     'team_ELO_before', 'opponent_ELO_before',
-    # 'odds_team_win',
-    # 'odds_draw',
-    # 'odds_opponent_win',
+    'odds_team_win',
+    'odds_draw',
+    'odds_opponent_win',
     'opponent_rest_days', 'team_rest_days',
-    'is_home',
     'team_h2h_win_percent', 'opponent_h2h_win_percent',
     #'team_ppg', 'opponent_ppg',
-    'team_ppg_mc', 'opponent_ppg_mc',
-    # 'pre_match_home_ppg', 'pre_match_away_ppg',
+    #'team_ppg_mc', 'opponent_ppg_mc',
+    'pre_match_home_ppg', 'pre_match_away_ppg',
+    #'pre_match_home_xg', 'pre_match_away_xg',
     'team_home_advantage', 'opponent_home_advantage',
-    # 'team_away_advantage', 'opponent_away_advantage'
+    #'team_away_advantage', 'opponent_away_advantage'
 ]
 
 def load_trained_model(model_path):
@@ -269,7 +269,7 @@ if __name__ == "__main__":
     specified_game_week = args.game_week  # New argument for specifying the game_week
 
     # Path to the YAML configuration files
-    config_base_path = '/root/barnard/ML/Configs/'
+    config_base_path = '/root/project-barnard/ML/Configs/'
     config_file = os.path.join(config_base_path, f'{league_name}.yaml')
 
     # Load YAML configuration

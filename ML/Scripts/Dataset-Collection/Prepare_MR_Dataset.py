@@ -116,7 +116,7 @@ def main():
     # === Define Acceptable Ranges for Numerical Fields to Detect Outliers ===
     GOALS_RANGE = (0, 15)
     ELO_RANGE = (0, 4000)
-    ODDS_RANGE = (0.0, 1000.0)
+    ODDS_RANGE = (0.1, 1000.0)
     REST_DAYS_RANGE = (0, 30)
     
     # === Define Thresholds for Expected Goals ===

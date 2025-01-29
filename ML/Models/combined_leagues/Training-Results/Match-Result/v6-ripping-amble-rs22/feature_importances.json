@@ -1,0 +1,14 @@
+{
+    "is_home": 0.02358807517670708,
+    "team_id": 0.09105603905954122,
+    "opponent_id": 0.09089500774083834,
+    "team_ELO_before": 0.10650482672134094,
+    "opponent_ELO_before": 0.10677148212101872,
+    "odds_team_win": 0.10157435942239375,
+    "odds_draw": 0.09051285026817475,
+    "odds_opponent_win": 0.10068227686917408,
+    "pre_match_home_ppg": 0.09259038135439333,
+    "pre_match_away_ppg": 0.09217904775512413,
+    "team_home_advantage": 0.05266974520939884,
+    "opponent_away_advantage": 0.0509759083018948
+}

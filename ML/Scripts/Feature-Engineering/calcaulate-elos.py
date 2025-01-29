@@ -187,7 +187,7 @@ def main():
         # === ELO Parameters ===
         INITIAL_ELO = 1500
         K_FACTOR = 20
-        HOME_ADVANTAGE = 100  # Fixed home advantage
+        HOME_ADVANTAGE = 0  # Fixed home advantage
 
         # === Initialize Variables to Track Prior Season Teams and Standings ===
         prior_season_standings = {}

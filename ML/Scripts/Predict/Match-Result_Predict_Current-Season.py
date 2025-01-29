@@ -23,23 +23,33 @@ import datetime  # For handling timestamps
 # Initialize colorama
 init(autoreset=True)
 
+# ================== Centralized Configuration ==================
+
+# Confidence Thresholds and Stake Amounts
+# Define all confidence thresholds and corresponding stake amounts here
+CONFIDENCE_CONFIG = {
+    'evaluation_threshold': 0.7,           # Threshold for evaluating accuracy
+    'betting_thresholds': [0.7],           # List of thresholds for betting
+    'stake_amounts': [5],                   # Corresponding stake amounts
+}
+
 # Define your feature list as used during training (odds are excluded)
 features = [
-    'team_id', 'opponent_id',
-    'team_ELO_before', 'opponent_ELO_before',
-    #'odds_team_win',
-    'odds_draw',
-    #'odds_opponent_win',
-    'opponent_rest_days', 'team_rest_days',
-    #'is_home',
-    'team_h2h_win_percent', 'opponent_h2h_win_percent',
-    #'team_ppg', 'opponent_ppg',
-    #'team_ppg_mc', 'opponent_ppg_mc',
-    'pre_match_home_ppg', 'pre_match_away_ppg',
-    #'pre_match_home_xg', 'pre_match_away_xg',
-    'team_home_advantage', 'opponent_home_advantage',
-    #'team_away_advantage', 'opponent_away_advantage'
+            'team_id', 'opponent_id',
+            #'team_ELO_before', 'opponent_ELO_before',
+            'odds_team_win', 'odds_draw', 'odds_opponent_win',
+            #'opponent_rest_days', 'team_rest_days',
+            #'team_h2h_win_percent', 'opponent_h2h_win_percent',
+            #'pre_match_home_ppg', 
+            #'pre_match_away_ppg',
+            #'opponent_ppg_mc', 'team_ppg_mc',
+            #'team_home_advantage', 
+            #'opponent_away_advantage', 
+            #'pre_match_home_xg' ,
+            #'pre_match_away_xg'
 ]
+
+# ===============================================================
 
 def convert_numpy_types(obj):
     """
@@ -77,7 +87,6 @@ def load_trained_model(model_name, model_dir='/root/barnard/machine-learning/tra
     except Exception as e:
         print(f"{Fore.RED}Error loading model '{model_name}': {e}{Style.RESET_ALL}")
         raise e
-
 
 
 
@@ -185,10 +194,13 @@ def evaluate_model_performance_combined(df_combined):
         print(f"{Fore.RED}The combined data does not contain the required columns for evaluation.{Style.RESET_ALL}")
         raise KeyError("Missing required columns in combined data.")
 
-def evaluate_threshold_accuracy_combined(df_combined, threshold=0.51):
+def evaluate_threshold_accuracy_combined(df_combined, threshold=None):
     """
     Evaluates and returns the threshold accuracy of predictions above a specified confidence.
     """
+    if threshold is None:
+        threshold = CONFIDENCE_CONFIG['evaluation_threshold']
+    
     try:
         # Determine the probability column corresponding to each prediction
         def get_predicted_probability(row):
@@ -216,7 +228,7 @@ def evaluate_threshold_accuracy_combined(df_combined, threshold=0.51):
             threshold_accuracy = correct_predictions.mean()
             print(f"{Fore.GREEN}Threshold Accuracy (Confidence >= {threshold*100:.0f}%): {threshold_accuracy*100:.2f}%{Style.RESET_ALL}")
 
-        return threshold_accuracy
+        return threshold_accuracy, df_threshold
     except KeyError:
         print(f"{Fore.RED}The combined data does not contain the required columns for threshold evaluation.{Style.RESET_ALL}")
         raise KeyError("Missing required columns in combined data.")
@@ -419,6 +431,70 @@ def compute_and_plot_distributions_combined(df_combined, class_labels, class_nam
         print(f"{Fore.RED}Failed to compute and plot class distributions: {e}{Style.RESET_ALL}")
         raise e
 
+def print_additional_evaluation_metrics(df_combined, df_threshold, class_names):
+    """
+    Prints additional evaluation metrics:
+    - Number of games that met the threshold.
+    - Distribution of predicted outcomes.
+    - Overall outcome distribution.
+    - Distribution of actual outcomes for predictions above threshold.
+    
+    Parameters:
+    - df_combined (pd.DataFrame): DataFrame with combined predictions.
+    - df_threshold (pd.DataFrame): DataFrame with predictions above threshold.
+    - class_names (dict): Dictionary mapping class labels to class names.
+    """
+    try:
+        total_predictions = len(df_combined)
+        threshold_predictions = len(df_threshold)
+        threshold = CONFIDENCE_CONFIG['evaluation_threshold']
+        print(f"\n{Fore.BLUE}=== Additional Evaluation Metrics ==={Style.RESET_ALL}")
+        print(f"Total Predictions: {total_predictions}")
+        print(f"Predictions with Confidence >= {threshold*100:.0f}%: {threshold_predictions} ({(threshold_predictions/total_predictions)*100:.2f}%)\n")
+        
+        # Outcome Distribution of Predictions
+        predicted_counts = df_combined['Final_Predicted_Winning_Team'].value_counts().sort_index()
+        print(f"{Fore.CYAN}Predicted Outcome Distribution:{Style.RESET_ALL}")
+        for cls, count in predicted_counts.items():
+            cls_name = class_names.get(cls, f"Class {cls}")
+            percentage = (count / total_predictions) * 100
+            print(f" - {cls_name}: {count} ({percentage:.2f}%)")
+        print()
+
+        # Overall Outcome Distribution
+        actual_counts = df_combined['winning_team'].value_counts().sort_index()
+        print(f"{Fore.CYAN}Actual Outcome Distribution:{Style.RESET_ALL}")
+        for cls, count in actual_counts.items():
+            cls_name = class_names.get(cls, f"Class {cls}")
+            percentage = (count / total_predictions) * 100
+            print(f" - {cls_name}: {count} ({percentage:.2f}%)")
+        print()
+
+        if threshold_predictions > 0:
+            # Outcome Distribution for Predictions Above Threshold
+            actual_threshold_counts = df_threshold['winning_team'].value_counts().sort_index()
+            predicted_threshold_counts = df_threshold['Final_Predicted_Winning_Team'].value_counts().sort_index()
+
+            print(f"{Fore.CYAN}Outcome Distribution for Predictions with Confidence >= {threshold*100:.0f}%:{Style.RESET_ALL}")
+            for cls in class_names.keys():
+                actual = actual_threshold_counts.get(cls, 0)
+                predicted = predicted_threshold_counts.get(cls, 0)
+                total = threshold_predictions
+                actual_pct = (actual / total) * 100
+                predicted_pct = (predicted / total) * 100
+                cls_name = class_names.get(cls, f"Class {cls}")
+                print(f" - {cls_name}:")
+                print(f"    * Actual: {actual} ({actual_pct:.2f}%)")
+                print(f"    * Predicted: {predicted} ({predicted_pct:.2f}%)")
+            print()
+        else:
+            print(f"{Fore.YELLOW}No predictions met the confidence threshold of {threshold*100:.0f}%.{Style.RESET_ALL}\n")
+
+        print(f"{Fore.BLUE}=== End of Additional Metrics ==={Style.RESET_ALL}\n")
+    except Exception as e:
+        print(f"{Fore.RED}Failed to print additional evaluation metrics: {e}{Style.RESET_ALL}")
+        raise e
+
 if __name__ == "__main__":
     # Define paths and model name
 
@@ -463,10 +539,6 @@ if __name__ == "__main__":
         2: 'odds_team_win'
     }
 
-    # Define confidence thresholds and corresponding stake amounts
-    confidence_thresholds = [0.51]  # 51%
-    stake_amounts = [5]  # Stakes corresponding to thresholds
-
     # Load the trained model
     trained_model = load_trained_model(prediction_model)
 
@@ -483,8 +555,6 @@ if __name__ == "__main__":
     except KeyError as e:
         print(f"{Fore.RED}Data verification failed: {e}{Style.RESET_ALL}")
         exit(1)
-
-    # Extract 'league_name_pretty' has already been done above
 
     # Filter data to only include matches where 'match_status' is 'complete'
     new_data = new_data[new_data['match_status'] == 'complete']
@@ -509,8 +579,8 @@ if __name__ == "__main__":
         df_combined, total_return = compute_betting_returns(
             df_combined,
             class_to_odds_column,
-            confidence_thresholds=confidence_thresholds,
-            stake_amounts=stake_amounts
+            confidence_thresholds=CONFIDENCE_CONFIG['betting_thresholds'],
+            stake_amounts=CONFIDENCE_CONFIG['stake_amounts']
         )
     except Exception as e:
         print(f"{Fore.RED}Failed to compute betting returns: {e}{Style.RESET_ALL}")
@@ -528,11 +598,24 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"{Fore.RED}Failed to calculate Total Stake and ROI: {e}{Style.RESET_ALL}")
 
-    # Evaluate and print accuracy for predictions over the 51% threshold
+    # Evaluate and print accuracy for predictions over the evaluation threshold
     try:
-        threshold_accuracy = evaluate_threshold_accuracy_combined(df_combined, threshold=0.51)
+        threshold_accuracy, df_threshold = evaluate_threshold_accuracy_combined(
+            df_combined, 
+            threshold=CONFIDENCE_CONFIG['evaluation_threshold']
+        )
     except Exception as e:
         print(f"{Fore.RED}Failed to evaluate threshold accuracy: {e}{Style.RESET_ALL}")
+
+    # Print Additional Evaluation Metrics
+    try:
+        print_additional_evaluation_metrics(
+            df_combined=df_combined,
+            df_threshold=df_threshold,
+            class_names=class_names
+        )
+    except Exception as e:
+        print(f"{Fore.RED}Failed to print additional evaluation metrics: {e}{Style.RESET_ALL}")
 
     # Extract unique competition_ids from the combined data
     try:
@@ -574,13 +657,13 @@ if __name__ == "__main__":
                     return 0  # Unknown class
 
             df_competition['Predicted_Confidence'] = df_competition.apply(get_predicted_probability, axis=1)
-            df_threshold = df_competition[df_competition['Predicted_Confidence'] >= 0.51]
+            df_threshold_competition = df_competition[df_competition['Predicted_Confidence'] >= CONFIDENCE_CONFIG['evaluation_threshold']]
 
-            if df_threshold.empty:
-                print(f"{Fore.YELLOW}No predictions with confidence >= 51% for competition_id {competition_id}.{Style.RESET_ALL}")
+            if df_threshold_competition.empty:
+                print(f"{Fore.YELLOW}No predictions with confidence >= {CONFIDENCE_CONFIG['evaluation_threshold']*100:.0f}% for competition_id {competition_id}.{Style.RESET_ALL}")
                 comp_threshold_accuracy = None
             else:
-                correct_predictions = df_threshold['Final_Predicted_Winning_Team'] == df_threshold['winning_team']
+                correct_predictions = df_threshold_competition['Final_Predicted_Winning_Team'] == df_threshold_competition['winning_team']
                 comp_threshold_accuracy = correct_predictions.mean()
                 print(f"{Fore.GREEN}Competition ID {competition_id} - Threshold Accuracy: {comp_threshold_accuracy*100:.2f}%{Style.RESET_ALL}")
         except Exception as e:
@@ -591,18 +674,18 @@ if __name__ == "__main__":
             # Calculate ROI
             total_stake = df_competition['Stake_Amount'].sum()
             total_profit_loss = df_competition['Bet_Return'].sum()
-            roi = (total_profit_loss / total_stake) * 100 if total_stake != 0 else 0
-            print(f"{Fore.GREEN}Competition ID {competition_id} - ROI: {roi:.2f}%{Style.RESET_ALL}")
+            roi_comp = (total_profit_loss / total_stake) * 100 if total_stake != 0 else 0
+            print(f"{Fore.GREEN}Competition ID {competition_id} - ROI: {roi_comp:.2f}%{Style.RESET_ALL}")
         except Exception as e:
             print(f"{Fore.RED}Failed to calculate ROI for competition_id {competition_id}: {e}{Style.RESET_ALL}")
-            roi = 0
+            roi_comp = 0
 
         # Append metrics to the list, including 'league_name_pretty'
         metrics = {
             'competition_id': int(competition_id),  # Ensure native int
             'accuracy': float(comp_accuracy),
             'threshold_accuracy': float(comp_threshold_accuracy) if comp_threshold_accuracy is not None else None,
-            'roi': float(roi),
+            'roi': float(roi_comp),
             'league_name_pretty': league_name_pretty  # Add this field
         }
         metrics_list.append(metrics)
@@ -630,3 +713,15 @@ if __name__ == "__main__":
         exit(1)
 
     print(f"{Fore.GREEN}All metrics have been successfully saved to the 'leagues' collection in MongoDB.{Style.RESET_ALL}")
+
+    # Optionally, compute and plot class distributions
+    try:
+        compute_and_plot_distributions_combined(
+            df_combined=df_combined,
+            class_labels=class_labels,
+            class_names=class_names,
+            metrics_dir=prediction_metrics_dir
+        )
+    except Exception as e:
+        print(f"{Fore.RED}Failed to compute and plot class distributions: {e}{Style.RESET_ALL}")
+        raise e
